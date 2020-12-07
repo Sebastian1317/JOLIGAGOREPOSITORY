@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BD_Categoria.cs" />
     <Compile Include="BD_Distrito.cs" />
+    <Compile Include="BD_Marca.cs" />
     <Compile Include="BD_Producto.cs" />
     <Compile Include="BD_Proveedor.cs" />
     <Compile Include="BD_Rol.cs" />
