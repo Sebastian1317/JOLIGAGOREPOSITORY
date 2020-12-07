@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BD_Distrito.cs" />
     <Compile Include="BD_Producto.cs" />
+    <Compile Include="BD_Proveedor.cs" />
     <Compile Include="BD_Rol.cs" />
     <Compile Include="BD_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
