@@ -4,3 +4,9 @@ C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Validaciones\obj\Debug\JL-Val
 C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Validaciones\obj\Debug\JL-Validaciones.csproj.CoreCompileInputs.cache
 C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Validaciones\obj\Debug\JL-Validaciones.dll
 C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Validaciones\obj\Debug\JL-Validaciones.pdb
+C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Validaciones\bin\Debug\JL-Validaciones.dll
+C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Validaciones\bin\Debug\JL-Validaciones.pdb
+C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Validaciones\obj\Debug\JL-Validaciones.csprojAssemblyReference.cache
+C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Validaciones\obj\Debug\JL-Validaciones.csproj.CoreCompileInputs.cache
+C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Validaciones\obj\Debug\JL-Validaciones.dll
+C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Validaciones\obj\Debug\JL-Validaciones.pdb

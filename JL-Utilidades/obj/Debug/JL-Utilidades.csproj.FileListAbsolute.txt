@@ -4,3 +4,9 @@ C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Utilidades\obj\Debug\JL-Utili
 C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Utilidades\obj\Debug\JL-Utilidades.csproj.CoreCompileInputs.cache
 C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Utilidades\obj\Debug\JL-Utilidades.dll
 C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Utilidades\obj\Debug\JL-Utilidades.pdb
+C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Utilidades\bin\Debug\JL-Utilidades.dll
+C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Utilidades\bin\Debug\JL-Utilidades.pdb
+C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Utilidades\obj\Debug\JL-Utilidades.csprojAssemblyReference.cache
+C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Utilidades\obj\Debug\JL-Utilidades.csproj.CoreCompileInputs.cache
+C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Utilidades\obj\Debug\JL-Utilidades.dll
+C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Utilidades\obj\Debug\JL-Utilidades.pdb
