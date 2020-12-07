@@ -1,0 +1,9 @@
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Modelos\bin\Debug\JL-Modelos.dll
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Modelos\bin\Debug\JL-Modelos.pdb
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Modelos\bin\Debug\JL-Entidades.dll
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Modelos\bin\Debug\JL-Entidades.pdb
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Modelos\obj\Debug\JL-Modelos.csprojAssemblyReference.cache
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Modelos\obj\Debug\JL-Modelos.csproj.CoreCompileInputs.cache
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Modelos\obj\Debug\JL-Modelos.csproj.CopyComplete
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Modelos\obj\Debug\JL-Modelos.dll
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Modelos\obj\Debug\JL-Modelos.pdb

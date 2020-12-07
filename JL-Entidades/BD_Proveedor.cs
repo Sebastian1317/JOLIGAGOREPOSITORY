@@ -20,8 +20,7 @@ namespace JL_Entidades
       public String estado_provdr { get; set; }
 
         public BD_Proveedor()
-        {
-             
+        {    
         }
 
         public BD_Proveedor(int idProvee, string nombre, string direccion, string telefono, string rubro, string rfc,

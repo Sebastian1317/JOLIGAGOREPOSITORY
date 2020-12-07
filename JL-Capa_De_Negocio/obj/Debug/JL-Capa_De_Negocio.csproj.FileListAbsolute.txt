@@ -1,0 +1,13 @@
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Capa_De_Negocio\bin\Debug\JL-Capa_De_Negocio.dll
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Capa_De_Negocio\bin\Debug\JL-Capa_De_Negocio.pdb
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Capa_De_Negocio\bin\Debug\JL-Entidades.dll
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Capa_De_Negocio\bin\Debug\JL-Modelos.dll
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Capa_De_Negocio\bin\Debug\JL-Validaciones.dll
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Capa_De_Negocio\bin\Debug\JL-Entidades.pdb
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Capa_De_Negocio\bin\Debug\JL-Modelos.pdb
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Capa_De_Negocio\bin\Debug\JL-Validaciones.pdb
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Capa_De_Negocio\obj\Debug\JL-Capa_De_Negocio.csprojAssemblyReference.cache
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Capa_De_Negocio\obj\Debug\JL-Capa_De_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Capa_De_Negocio\obj\Debug\JL-Capa_De_Negocio.csproj.CopyComplete
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Capa_De_Negocio\obj\Debug\JL-Capa_De_Negocio.dll
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Capa_De_Negocio\obj\Debug\JL-Capa_De_Negocio.pdb

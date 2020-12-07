@@ -1,0 +1,6 @@
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Utilidades\bin\Debug\JL-Utilidades.dll
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Utilidades\bin\Debug\JL-Utilidades.pdb
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Utilidades\obj\Debug\JL-Utilidades.csprojAssemblyReference.cache
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Utilidades\obj\Debug\JL-Utilidades.csproj.CoreCompileInputs.cache
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Utilidades\obj\Debug\JL-Utilidades.dll
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Utilidades\obj\Debug\JL-Utilidades.pdb

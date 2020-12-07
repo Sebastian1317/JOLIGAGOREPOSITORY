@@ -1,0 +1,12 @@
+C:\Users\Antonio\source\repos\Jolugago-Project1\Jolugago-Project1\obj\Debug\Jolugago-Project1.csprojAssemblyReference.cache
+C:\Users\Antonio\source\repos\Jolugago-Project1\Jolugago-Project1\obj\Debug\Jolugago_Project1.Login.resources
+C:\Users\Antonio\source\repos\Jolugago-Project1\Jolugago-Project1\obj\Debug\Jolugago_Project1.Properties.Resources.resources
+C:\Users\Antonio\source\repos\Jolugago-Project1\Jolugago-Project1\obj\Debug\Jolugago-Project1.csproj.GenerateResource.cache
+C:\Users\Antonio\source\repos\Jolugago-Project1\Jolugago-Project1\obj\Debug\Jolugago-Project1.csproj.CoreCompileInputs.cache
+C:\Users\Antonio\source\repos\Jolugago-Project1\Jolugago-Project1\bin\Debug\Jolugago-Project1.exe.config
+C:\Users\Antonio\source\repos\Jolugago-Project1\Jolugago-Project1\bin\Debug\Jolugago-Project1.exe
+C:\Users\Antonio\source\repos\Jolugago-Project1\Jolugago-Project1\bin\Debug\Jolugago-Project1.pdb
+C:\Users\Antonio\source\repos\Jolugago-Project1\Jolugago-Project1\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Antonio\source\repos\Jolugago-Project1\Jolugago-Project1\obj\Debug\Jolugago-Project1.csproj.CopyComplete
+C:\Users\Antonio\source\repos\Jolugago-Project1\Jolugago-Project1\obj\Debug\Jolugago-Project1.exe
+C:\Users\Antonio\source\repos\Jolugago-Project1\Jolugago-Project1\obj\Debug\Jolugago-Project1.pdb

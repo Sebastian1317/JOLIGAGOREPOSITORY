@@ -1,0 +1,6 @@
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Validaciones\bin\Debug\JL-Validaciones.dll
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Validaciones\bin\Debug\JL-Validaciones.pdb
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Validaciones\obj\Debug\JL-Validaciones.csprojAssemblyReference.cache
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Validaciones\obj\Debug\JL-Validaciones.csproj.CoreCompileInputs.cache
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Validaciones\obj\Debug\JL-Validaciones.dll
+C:\Users\Antonio\source\repos\Jolugago-Project1\JL-Validaciones\obj\Debug\JL-Validaciones.pdb
