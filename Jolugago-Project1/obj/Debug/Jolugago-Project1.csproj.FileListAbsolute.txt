@@ -36,3 +36,11 @@ C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago-Project1.pdb
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Proveedor.InsertarProveedor.resources
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Proveedor.Proveedor.resources
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\JL-Capa_De_Negocio.dll
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\JL-Entidades.dll
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\JL-Modelos.dll
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\JL-Validaciones.dll
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\JL-Capa_De_Negocio.pdb
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\JL-Entidades.pdb
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\JL-Modelos.pdb
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\JL-Validaciones.pdb

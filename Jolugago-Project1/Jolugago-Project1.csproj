@@ -104,5 +104,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JL-Capa_De_Negocio\JL-Capa_De_Negocio.csproj">
+      <Project>{9D59280C-EA3B-4EAF-9770-63C8D76E558E}</Project>
+      <Name>JL-Capa_De_Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JL-Entidades\JL-Entidades.csproj">
+      <Project>{f35466d2-dcb9-4061-8350-a62fc65eb03b}</Project>
+      <Name>JL-Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

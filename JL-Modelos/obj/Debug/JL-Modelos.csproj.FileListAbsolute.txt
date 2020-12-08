@@ -16,3 +16,12 @@ C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Modelos\obj\Debug\JL-Modelos
 C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Modelos\obj\Debug\JL-Modelos.csproj.CopyComplete
 C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Modelos\obj\Debug\JL-Modelos.dll
 C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Modelos\obj\Debug\JL-Modelos.pdb
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Modelos\bin\Debug\JL-Modelos.dll
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Modelos\bin\Debug\JL-Modelos.pdb
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Modelos\bin\Debug\JL-Entidades.dll
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Modelos\bin\Debug\JL-Entidades.pdb
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Modelos\obj\Debug\JL-Modelos.csprojAssemblyReference.cache
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Modelos\obj\Debug\JL-Modelos.csproj.CoreCompileInputs.cache
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Modelos\obj\Debug\JL-Modelos.csproj.CopyComplete
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Modelos\obj\Debug\JL-Modelos.dll
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Modelos\obj\Debug\JL-Modelos.pdb

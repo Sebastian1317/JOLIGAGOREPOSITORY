@@ -21,11 +21,10 @@ namespace JL_Capa_De_Negocio
 
 
             BD_Usuario usuarioC = new BD_Usuario();
-            ValidacionesRegex validaremail = new ValidacionesRegex();
 
             try {
 
-                if (validaremail.validarEmail(correo)==true) {
+                if (ValidacionesRegex.validarEmail(correo)==true) {
 
                     usuarioC = iusuario.accesarLogin(correo: correo, contraseña: contraseña);
 

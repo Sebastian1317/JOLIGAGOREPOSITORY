@@ -10,3 +10,9 @@ C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Entidades\obj\Debug\JL-Entid
 C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Entidades\obj\Debug\JL-Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Entidades\obj\Debug\JL-Entidades.dll
 C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\JL-Entidades\obj\Debug\JL-Entidades.pdb
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Entidades\bin\Debug\JL-Entidades.dll
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Entidades\bin\Debug\JL-Entidades.pdb
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Entidades\obj\Debug\JL-Entidades.csprojAssemblyReference.cache
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Entidades\obj\Debug\JL-Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Entidades\obj\Debug\JL-Entidades.dll
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Entidades\obj\Debug\JL-Entidades.pdb
