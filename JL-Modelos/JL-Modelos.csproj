@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BD_BaseDeDatos.cs" />
+    <Compile Include="Interfaces\M_IProducto.cs" />
     <Compile Include="Interfaces\M_IProveedor.cs" />
     <Compile Include="Interfaces\M_IUsuario.cs" />
+    <Compile Include="M_Producto.cs" />
     <Compile Include="M_Proveedor.cs" />
     <Compile Include="M_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
