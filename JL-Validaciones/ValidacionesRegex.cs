@@ -9,7 +9,7 @@ namespace JL_Validaciones
 {
     public class ValidacionesRegex
     {
-        public bool validarEmail(String email) {
+        public static bool validarEmail(String email) {
 
             String expresion = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
 

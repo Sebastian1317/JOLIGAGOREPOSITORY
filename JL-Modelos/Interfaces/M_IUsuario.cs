@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace JL_Modelos.Interfaces
 {
-    interface M_IUsuario
+  public interface M_IUsuario
     {
         bool insertarUsuario(BD_Usuario usuario);
         bool eliminarUsuario(int id_usuario);

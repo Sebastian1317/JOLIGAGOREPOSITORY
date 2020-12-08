@@ -22,3 +22,17 @@ C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\Jolugago-Project1\obj\Debug\Jol
 C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\Jolugago-Project1\obj\Debug\Jolugago-Project1.csproj.CopyComplete
 C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\Jolugago-Project1\obj\Debug\Jolugago-Project1.exe
 C:\Users\Cinthya\Source\Repos\JOLIGAGOREPOSITORY\Jolugago-Project1\obj\Debug\Jolugago-Project1.pdb
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\Jolugago-Project1.exe.config
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\Jolugago-Project1.exe
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\Jolugago-Project1.pdb
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago-Project1.csprojAssemblyReference.cache
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Login.resources
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Properties.Resources.resources
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago-Project1.csproj.GenerateResource.cache
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago-Project1.csproj.CoreCompileInputs.cache
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago-Project1.csproj.CopyComplete
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago-Project1.exe
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago-Project1.pdb
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Proveedor.InsertarProveedor.resources
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Proveedor.Proveedor.resources
