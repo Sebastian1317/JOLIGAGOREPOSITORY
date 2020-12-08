@@ -36,9 +36,7 @@ namespace Jolugago_Project1.Proveedor
             txtCorreo.Text, txtContacto.Text, txtLogo.Text.Trim(), ((cbActivo.Checked)?"Activo":"Desactivado"))
                 ))
             {
-
                 MessageBox.Show("Se inserto correctamente");
-
             }
             else {
                 MessageBox.Show("No se inserto correctamente");

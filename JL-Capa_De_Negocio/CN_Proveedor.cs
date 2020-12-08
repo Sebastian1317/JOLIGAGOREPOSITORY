@@ -1,6 +1,7 @@
 ﻿using JL_Entidades;
 using JL_Modelos;
 using JL_Modelos.Interfaces;
+using JL_Utilidades;
 using JL_Validaciones;
 using System;
 using System.Collections.Generic;
@@ -47,7 +48,6 @@ namespace JL_Capa_De_Negocio
         {
             try
             {
-
                 if (proveedor != null)
                 {
                     if (ValidacionesRegex.validarEmail(proveedor.correo))
@@ -99,5 +99,30 @@ namespace JL_Capa_De_Negocio
             }
         }
 
+        public void llenarProveedores(DataGridView datagridview) {
+            try {
+                if (Utilidades.cargarGrid(iproveedor.obtenerProveedores(), datagridview) == null)
+                {
+                    MessageBox.Show("No hay proveedores por mostrar");
+                }
+            } catch (Exception ex) {
+                MessageBox.Show("+CN_Proveedor-llenarProveedores: " + ex.Message);
+            }
+        }
+
+        public void llenarProveedoresPor(DataGridView datagridview,String datos) {
+
+            try
+            {
+                Utilidades.cargarGrid(iproveedor.obtenerProveedorPor(datos, datos, datos), datagridview); 
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("+CN_Proveedor-llenarProveedores: " + ex.Message);
+            }
+
+
+        }
     }
 }

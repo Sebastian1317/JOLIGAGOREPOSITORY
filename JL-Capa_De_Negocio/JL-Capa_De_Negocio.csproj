@@ -55,6 +55,10 @@
       <Project>{C9274CE2-7FEF-48F5-AE02-930CEA737C0C}</Project>
       <Name>JL-Modelos</Name>
     </ProjectReference>
+    <ProjectReference Include="..\JL-Utilidades\JL-Utilidades.csproj">
+      <Project>{2CCFB9CB-84C2-4644-9F8E-62CE3D602CDC}</Project>
+      <Name>JL-Utilidades</Name>
+    </ProjectReference>
     <ProjectReference Include="..\JL-Validaciones\JL-Validaciones.csproj">
       <Project>{32E7477D-E985-4F3D-B6D7-8CE1AC466126}</Project>
       <Name>JL-Validaciones</Name>

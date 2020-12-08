@@ -135,11 +135,10 @@ namespace JL_Modelos
                
                 if (reader.HasRows) {
 
-                    BD_Proveedor proveedor = new BD_Proveedor();
-
+                    
                     while (reader.Read()) {
+                        BD_Proveedor proveedor = new BD_Proveedor();
 
-                        
                         proveedor.idProvee = int.Parse(reader["IDPROVEE"].ToString());
                         proveedor.nombre = reader["NOMBRE"].ToString();
                         proveedor.direccion = reader["DIRECCION"].ToString();
@@ -186,13 +185,11 @@ namespace JL_Modelos
 
                 if (reader.HasRows)
                 {
-
+                    
                     BD_Proveedor proveedor = new BD_Proveedor();
-
                     while (reader.Read())
                     {
-
-
+                       
                         proveedor.idProvee = int.Parse(reader["IDPROVEE"].ToString());
                         proveedor.nombre = reader["NOMBRE"].ToString();
                         proveedor.direccion = reader["DIRECCION"].ToString();
@@ -202,6 +199,7 @@ namespace JL_Modelos
                         proveedor.contacto = reader["CONTACTO"].ToString();
 
                         proveedores.Add(proveedor);
+                        proveedor = new BD_Proveedor();
                     }
                     cnn.Close();
                     return proveedores;

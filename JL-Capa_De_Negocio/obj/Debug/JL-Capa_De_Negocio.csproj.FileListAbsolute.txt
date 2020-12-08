@@ -37,3 +37,5 @@ C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Capa_De_Negoc
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Capa_De_Negocio\bin\Debug\JL-Modelos.pdb
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Capa_De_Negocio\bin\Debug\JL-Validaciones.pdb
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Capa_De_Negocio\obj\Debug\JL-Capa_De_Negocio.csproj.CopyComplete
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Capa_De_Negocio\bin\Debug\JL-Utilidades.dll
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\JL-Capa_De_Negocio\bin\Debug\JL-Utilidades.pdb
