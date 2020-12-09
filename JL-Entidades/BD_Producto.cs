@@ -9,14 +9,14 @@ namespace JL_Entidades
     public class BD_Producto
     {
      public int Id_Pro { get; set; }
-     public int idProvee { get; set; }
+     public BD_Proveedor idProvee { get; set; }
         public String descripcion_larga { get; set; }
         public decimal frank { get; set; }
         public decimal pre_CompraS { get; set; }
         public decimal pre_CompraD { get; set; }
         public decimal stock_Actual { get; set; }
-        public int id_Cat { get; set; }
-        public int id_Marca { get; set; }
+        public BD_Categoria id_Cat { get; set; }
+        public BD_Marca id_Marca { get; set; }
         public String foto { get; set; }
         public decimal pre_vntaxMenor { get; set; }
         public decimal pre_vntaxMayor { get; set; }
@@ -34,13 +34,11 @@ namespace JL_Entidades
         {
         }
 
-        public BD_Producto(int id_Pro, int idProvee, 
-            string descripcion_larga, decimal frank, decimal pre_CompraS, 
-            decimal pre_CompraD, decimal stock_Actual, int id_Cat, int id_Marca, 
-            string foto, decimal pre_vntaxMenor, decimal pre_vntaxMayor,
-            decimal pre_Vntadolar, char undMedida, decimal pesoUnit, decimal utilidadUnit, string tipoProdcto,
-            decimal valor_porCant, 
-            string estado_Pro, string id_ProductoFact, string claveProducto)
+        public BD_Producto(int id_Pro, BD_Proveedor idProvee, string descripcion_larga, 
+            decimal frank, decimal pre_CompraS, decimal pre_CompraD, decimal stock_Actual, BD_Categoria id_Cat, 
+            BD_Marca id_Marca, string foto, decimal pre_vntaxMenor, decimal pre_vntaxMayor, decimal pre_Vntadolar, 
+            char undMedida, decimal pesoUnit, decimal utilidadUnit, string tipoProdcto, 
+            decimal valor_porCant, string estado_Pro, string id_ProductoFact, string claveProducto)
         {
             Id_Pro = id_Pro;
             this.idProvee = idProvee;

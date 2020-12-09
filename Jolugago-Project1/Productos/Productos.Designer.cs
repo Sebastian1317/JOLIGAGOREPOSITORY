@@ -1,0 +1,709 @@
+﻿namespace Jolugago_Project1.Productos
+{
+    partial class Productos
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.ddlMarca = new Bunifu.Framework.UI.BunifuDropdown();
+            this.ddlCategoria = new Bunifu.Framework.UI.BunifuDropdown();
+            this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtpre_compraS = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.txtpre_compraD = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtpre_ventaxmenor = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtstock_actual = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtpre_ventadolar = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txxtpre_ventaxmayor = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtutilidadUnit = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtPesoUnit = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuCustomLabel13 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtvalor_porCAntidad = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel15 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.ddlUnidadMedida = new Bunifu.Framework.UI.BunifuDropdown();
+            this.bunifuCustomLabel16 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.ddlProveedor = new Bunifu.Framework.UI.BunifuDropdown();
+            this.txtTipoProducto = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuCustomLabel17 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.cbActivo = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.cbDesa = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.bunifuCustomLabel18 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel19 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel20 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtClaveProducto = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.bunifuCustomLabel21 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.SuspendLayout();
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(19, 37);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(161, 20);
+            this.bunifuCustomLabel1.TabIndex = 0;
+            this.bunifuCustomLabel1.Text = "Nombre del producto:";
+            // 
+            // bunifuMaterialTextbox1
+            // 
+            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuMaterialTextbox1.HintText = "";
+            this.bunifuMaterialTextbox1.isPassword = false;
+            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
+            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.bunifuMaterialTextbox1.LineThickness = 3;
+            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(23, 61);
+            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
+            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(416, 33);
+            this.bunifuMaterialTextbox1.TabIndex = 3;
+            this.bunifuMaterialTextbox1.Text = "bunifuMaterialTextbox1";
+            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // ddlMarca
+            // 
+            this.ddlMarca.BackColor = System.Drawing.Color.Transparent;
+            this.ddlMarca.BorderRadius = 3;
+            this.ddlMarca.DisabledColor = System.Drawing.Color.Gray;
+            this.ddlMarca.ForeColor = System.Drawing.Color.White;
+            this.ddlMarca.Items = new string[0];
+            this.ddlMarca.Location = new System.Drawing.Point(458, 61);
+            this.ddlMarca.Name = "ddlMarca";
+            this.ddlMarca.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ddlMarca.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ddlMarca.selectedIndex = -1;
+            this.ddlMarca.Size = new System.Drawing.Size(192, 33);
+            this.ddlMarca.TabIndex = 4;
+            // 
+            // ddlCategoria
+            // 
+            this.ddlCategoria.BackColor = System.Drawing.Color.Transparent;
+            this.ddlCategoria.BorderRadius = 3;
+            this.ddlCategoria.DisabledColor = System.Drawing.Color.Gray;
+            this.ddlCategoria.ForeColor = System.Drawing.Color.White;
+            this.ddlCategoria.Items = new string[0];
+            this.ddlCategoria.Location = new System.Drawing.Point(656, 61);
+            this.ddlCategoria.Name = "ddlCategoria";
+            this.ddlCategoria.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ddlCategoria.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ddlCategoria.selectedIndex = -1;
+            this.ddlCategoria.Size = new System.Drawing.Size(192, 33);
+            this.ddlCategoria.TabIndex = 5;
+            // 
+            // bunifuCustomLabel4
+            // 
+            this.bunifuCustomLabel4.AutoSize = true;
+            this.bunifuCustomLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(454, 37);
+            this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
+            this.bunifuCustomLabel4.Size = new System.Drawing.Size(57, 20);
+            this.bunifuCustomLabel4.TabIndex = 6;
+            this.bunifuCustomLabel4.Text = "Marca:";
+            // 
+            // bunifuCustomLabel5
+            // 
+            this.bunifuCustomLabel5.AutoSize = true;
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(652, 37);
+            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(82, 20);
+            this.bunifuCustomLabel5.TabIndex = 7;
+            this.bunifuCustomLabel5.Text = "Categoria:";
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(19, 114);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(68, 20);
+            this.bunifuCustomLabel2.TabIndex = 8;
+            this.bunifuCustomLabel2.Text = "Precios";
+            // 
+            // bunifuCustomLabel3
+            // 
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(454, 114);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(57, 20);
+            this.bunifuCustomLabel3.TabIndex = 9;
+            this.bunifuCustomLabel3.Text = "Datos";
+            // 
+            // bunifuCustomLabel6
+            // 
+            this.bunifuCustomLabel6.AutoSize = true;
+            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(19, 159);
+            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(136, 20);
+            this.bunifuCustomLabel6.TabIndex = 10;
+            this.bunifuCustomLabel6.Text = "Precio de compra:";
+            // 
+            // txtpre_compraS
+            // 
+            this.txtpre_compraS.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtpre_compraS.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtpre_compraS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtpre_compraS.HintForeColor = System.Drawing.Color.Empty;
+            this.txtpre_compraS.HintText = "";
+            this.txtpre_compraS.isPassword = false;
+            this.txtpre_compraS.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtpre_compraS.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtpre_compraS.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtpre_compraS.LineThickness = 3;
+            this.txtpre_compraS.Location = new System.Drawing.Point(23, 183);
+            this.txtpre_compraS.Margin = new System.Windows.Forms.Padding(4);
+            this.txtpre_compraS.Name = "txtpre_compraS";
+            this.txtpre_compraS.Size = new System.Drawing.Size(176, 33);
+            this.txtpre_compraS.TabIndex = 11;
+            this.txtpre_compraS.Text = "txtpre_compraS";
+            this.txtpre_compraS.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtpre_compraD
+            // 
+            this.txtpre_compraD.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtpre_compraD.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtpre_compraD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtpre_compraD.HintForeColor = System.Drawing.Color.Empty;
+            this.txtpre_compraD.HintText = "";
+            this.txtpre_compraD.isPassword = false;
+            this.txtpre_compraD.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtpre_compraD.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtpre_compraD.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtpre_compraD.LineThickness = 3;
+            this.txtpre_compraD.Location = new System.Drawing.Point(264, 183);
+            this.txtpre_compraD.Margin = new System.Windows.Forms.Padding(4);
+            this.txtpre_compraD.Name = "txtpre_compraD";
+            this.txtpre_compraD.Size = new System.Drawing.Size(176, 33);
+            this.txtpre_compraD.TabIndex = 13;
+            this.txtpre_compraD.Text = "bunifuMaterialTextbox3";
+            this.txtpre_compraD.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel7
+            // 
+            this.bunifuCustomLabel7.AutoSize = true;
+            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(260, 159);
+            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(122, 20);
+            this.bunifuCustomLabel7.TabIndex = 12;
+            this.bunifuCustomLabel7.Text = "Precio de venta:";
+            // 
+            // txtpre_ventaxmenor
+            // 
+            this.txtpre_ventaxmenor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtpre_ventaxmenor.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtpre_ventaxmenor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtpre_ventaxmenor.HintForeColor = System.Drawing.Color.Empty;
+            this.txtpre_ventaxmenor.HintText = "";
+            this.txtpre_ventaxmenor.isPassword = false;
+            this.txtpre_ventaxmenor.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtpre_ventaxmenor.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtpre_ventaxmenor.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtpre_ventaxmenor.LineThickness = 3;
+            this.txtpre_ventaxmenor.Location = new System.Drawing.Point(264, 263);
+            this.txtpre_ventaxmenor.Margin = new System.Windows.Forms.Padding(4);
+            this.txtpre_ventaxmenor.Name = "txtpre_ventaxmenor";
+            this.txtpre_ventaxmenor.Size = new System.Drawing.Size(176, 33);
+            this.txtpre_ventaxmenor.TabIndex = 17;
+            this.txtpre_ventaxmenor.Text = "bunifuMaterialTextbox4";
+            this.txtpre_ventaxmenor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel8
+            // 
+            this.bunifuCustomLabel8.AutoSize = true;
+            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel8.Location = new System.Drawing.Point(260, 239);
+            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
+            this.bunifuCustomLabel8.Size = new System.Drawing.Size(136, 20);
+            this.bunifuCustomLabel8.TabIndex = 16;
+            this.bunifuCustomLabel8.Text = "Precio con menor:";
+            // 
+            // txtstock_actual
+            // 
+            this.txtstock_actual.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtstock_actual.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtstock_actual.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtstock_actual.HintForeColor = System.Drawing.Color.Empty;
+            this.txtstock_actual.HintText = "";
+            this.txtstock_actual.isPassword = false;
+            this.txtstock_actual.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtstock_actual.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtstock_actual.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtstock_actual.LineThickness = 3;
+            this.txtstock_actual.Location = new System.Drawing.Point(23, 263);
+            this.txtstock_actual.Margin = new System.Windows.Forms.Padding(4);
+            this.txtstock_actual.Name = "txtstock_actual";
+            this.txtstock_actual.Size = new System.Drawing.Size(176, 33);
+            this.txtstock_actual.TabIndex = 15;
+            this.txtstock_actual.Text = "bunifuMaterialTextbox5";
+            this.txtstock_actual.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel9
+            // 
+            this.bunifuCustomLabel9.AutoSize = true;
+            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(19, 239);
+            this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(101, 20);
+            this.bunifuCustomLabel9.TabIndex = 14;
+            this.bunifuCustomLabel9.Text = "Stock actual:";
+            // 
+            // txtpre_ventadolar
+            // 
+            this.txtpre_ventadolar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtpre_ventadolar.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtpre_ventadolar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtpre_ventadolar.HintForeColor = System.Drawing.Color.Empty;
+            this.txtpre_ventadolar.HintText = "";
+            this.txtpre_ventadolar.isPassword = false;
+            this.txtpre_ventadolar.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtpre_ventadolar.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtpre_ventadolar.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtpre_ventadolar.LineThickness = 3;
+            this.txtpre_ventadolar.Location = new System.Drawing.Point(264, 355);
+            this.txtpre_ventadolar.Margin = new System.Windows.Forms.Padding(4);
+            this.txtpre_ventadolar.Name = "txtpre_ventadolar";
+            this.txtpre_ventadolar.Size = new System.Drawing.Size(176, 33);
+            this.txtpre_ventadolar.TabIndex = 21;
+            this.txtpre_ventadolar.Text = "bunifuMaterialTextbox6";
+            this.txtpre_ventadolar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel10
+            // 
+            this.bunifuCustomLabel10.AutoSize = true;
+            this.bunifuCustomLabel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(260, 331);
+            this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
+            this.bunifuCustomLabel10.Size = new System.Drawing.Size(121, 20);
+            this.bunifuCustomLabel10.TabIndex = 20;
+            this.bunifuCustomLabel10.Text = "Precio en dollar:";
+            // 
+            // txxtpre_ventaxmayor
+            // 
+            this.txxtpre_ventaxmayor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txxtpre_ventaxmayor.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txxtpre_ventaxmayor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txxtpre_ventaxmayor.HintForeColor = System.Drawing.Color.Empty;
+            this.txxtpre_ventaxmayor.HintText = "";
+            this.txxtpre_ventaxmayor.isPassword = false;
+            this.txxtpre_ventaxmayor.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txxtpre_ventaxmayor.LineIdleColor = System.Drawing.Color.Gray;
+            this.txxtpre_ventaxmayor.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txxtpre_ventaxmayor.LineThickness = 3;
+            this.txxtpre_ventaxmayor.Location = new System.Drawing.Point(23, 355);
+            this.txxtpre_ventaxmayor.Margin = new System.Windows.Forms.Padding(4);
+            this.txxtpre_ventaxmayor.Name = "txxtpre_ventaxmayor";
+            this.txxtpre_ventaxmayor.Size = new System.Drawing.Size(176, 33);
+            this.txxtpre_ventaxmayor.TabIndex = 19;
+            this.txxtpre_ventaxmayor.Text = "bunifuMaterialTextbox7";
+            this.txxtpre_ventaxmayor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel11
+            // 
+            this.bunifuCustomLabel11.AutoSize = true;
+            this.bunifuCustomLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(19, 331);
+            this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
+            this.bunifuCustomLabel11.Size = new System.Drawing.Size(144, 20);
+            this.bunifuCustomLabel11.TabIndex = 18;
+            this.bunifuCustomLabel11.Text = "Precio de mayoreo:";
+            // 
+            // txtutilidadUnit
+            // 
+            this.txtutilidadUnit.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtutilidadUnit.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtutilidadUnit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtutilidadUnit.HintForeColor = System.Drawing.Color.Empty;
+            this.txtutilidadUnit.HintText = "";
+            this.txtutilidadUnit.isPassword = false;
+            this.txtutilidadUnit.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtutilidadUnit.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtutilidadUnit.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtutilidadUnit.LineThickness = 3;
+            this.txtutilidadUnit.Location = new System.Drawing.Point(264, 446);
+            this.txtutilidadUnit.Margin = new System.Windows.Forms.Padding(4);
+            this.txtutilidadUnit.Name = "txtutilidadUnit";
+            this.txtutilidadUnit.Size = new System.Drawing.Size(176, 33);
+            this.txtutilidadUnit.TabIndex = 25;
+            this.txtutilidadUnit.Text = "bunifuMaterialTextbox8";
+            this.txtutilidadUnit.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel12
+            // 
+            this.bunifuCustomLabel12.AutoSize = true;
+            this.bunifuCustomLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(260, 422);
+            this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
+            this.bunifuCustomLabel12.Size = new System.Drawing.Size(66, 20);
+            this.bunifuCustomLabel12.TabIndex = 24;
+            this.bunifuCustomLabel12.Text = "Utilidad:";
+            // 
+            // txtPesoUnit
+            // 
+            this.txtPesoUnit.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPesoUnit.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtPesoUnit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPesoUnit.HintForeColor = System.Drawing.Color.Empty;
+            this.txtPesoUnit.HintText = "";
+            this.txtPesoUnit.isPassword = false;
+            this.txtPesoUnit.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtPesoUnit.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtPesoUnit.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtPesoUnit.LineThickness = 3;
+            this.txtPesoUnit.Location = new System.Drawing.Point(23, 446);
+            this.txtPesoUnit.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPesoUnit.Name = "txtPesoUnit";
+            this.txtPesoUnit.Size = new System.Drawing.Size(176, 33);
+            this.txtPesoUnit.TabIndex = 23;
+            this.txtPesoUnit.Text = "bunifuMaterialTextbox9";
+            this.txtPesoUnit.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel13
+            // 
+            this.bunifuCustomLabel13.AutoSize = true;
+            this.bunifuCustomLabel13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel13.Location = new System.Drawing.Point(19, 422);
+            this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
+            this.bunifuCustomLabel13.Size = new System.Drawing.Size(105, 20);
+            this.bunifuCustomLabel13.TabIndex = 22;
+            this.bunifuCustomLabel13.Text = "Peso unitario:";
+            // 
+            // txtvalor_porCAntidad
+            // 
+            this.txtvalor_porCAntidad.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtvalor_porCAntidad.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtvalor_porCAntidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtvalor_porCAntidad.HintForeColor = System.Drawing.Color.Empty;
+            this.txtvalor_porCAntidad.HintText = "";
+            this.txtvalor_porCAntidad.isPassword = false;
+            this.txtvalor_porCAntidad.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtvalor_porCAntidad.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtvalor_porCAntidad.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtvalor_porCAntidad.LineThickness = 3;
+            this.txtvalor_porCAntidad.Location = new System.Drawing.Point(23, 524);
+            this.txtvalor_porCAntidad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtvalor_porCAntidad.Name = "txtvalor_porCAntidad";
+            this.txtvalor_porCAntidad.Size = new System.Drawing.Size(417, 33);
+            this.txtvalor_porCAntidad.TabIndex = 27;
+            this.txtvalor_porCAntidad.Text = "bunifuMaterialTextbox10";
+            this.txtvalor_porCAntidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel14
+            // 
+            this.bunifuCustomLabel14.AutoSize = true;
+            this.bunifuCustomLabel14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel14.Location = new System.Drawing.Point(19, 500);
+            this.bunifuCustomLabel14.Name = "bunifuCustomLabel14";
+            this.bunifuCustomLabel14.Size = new System.Drawing.Size(142, 20);
+            this.bunifuCustomLabel14.TabIndex = 26;
+            this.bunifuCustomLabel14.Text = "Valor por cantidad:";
+            // 
+            // bunifuCustomLabel15
+            // 
+            this.bunifuCustomLabel15.AutoSize = true;
+            this.bunifuCustomLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel15.Location = new System.Drawing.Point(454, 159);
+            this.bunifuCustomLabel15.Name = "bunifuCustomLabel15";
+            this.bunifuCustomLabel15.Size = new System.Drawing.Size(142, 20);
+            this.bunifuCustomLabel15.TabIndex = 29;
+            this.bunifuCustomLabel15.Text = "Unidad de medida:";
+            // 
+            // ddlUnidadMedida
+            // 
+            this.ddlUnidadMedida.BackColor = System.Drawing.Color.Transparent;
+            this.ddlUnidadMedida.BorderRadius = 3;
+            this.ddlUnidadMedida.DisabledColor = System.Drawing.Color.Gray;
+            this.ddlUnidadMedida.ForeColor = System.Drawing.Color.White;
+            this.ddlUnidadMedida.Items = new string[0];
+            this.ddlUnidadMedida.Location = new System.Drawing.Point(458, 183);
+            this.ddlUnidadMedida.Name = "ddlUnidadMedida";
+            this.ddlUnidadMedida.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ddlUnidadMedida.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ddlUnidadMedida.selectedIndex = -1;
+            this.ddlUnidadMedida.Size = new System.Drawing.Size(390, 33);
+            this.ddlUnidadMedida.TabIndex = 28;
+            // 
+            // bunifuCustomLabel16
+            // 
+            this.bunifuCustomLabel16.AutoSize = true;
+            this.bunifuCustomLabel16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel16.Location = new System.Drawing.Point(454, 239);
+            this.bunifuCustomLabel16.Name = "bunifuCustomLabel16";
+            this.bunifuCustomLabel16.Size = new System.Drawing.Size(85, 20);
+            this.bunifuCustomLabel16.TabIndex = 31;
+            this.bunifuCustomLabel16.Text = "Proveedor:";
+            // 
+            // ddlProveedor
+            // 
+            this.ddlProveedor.BackColor = System.Drawing.Color.Transparent;
+            this.ddlProveedor.BorderRadius = 3;
+            this.ddlProveedor.DisabledColor = System.Drawing.Color.Gray;
+            this.ddlProveedor.ForeColor = System.Drawing.Color.White;
+            this.ddlProveedor.Items = new string[0];
+            this.ddlProveedor.Location = new System.Drawing.Point(458, 263);
+            this.ddlProveedor.Name = "ddlProveedor";
+            this.ddlProveedor.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.ddlProveedor.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.ddlProveedor.selectedIndex = -1;
+            this.ddlProveedor.Size = new System.Drawing.Size(390, 33);
+            this.ddlProveedor.TabIndex = 30;
+            // 
+            // txtTipoProducto
+            // 
+            this.txtTipoProducto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTipoProducto.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtTipoProducto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTipoProducto.HintForeColor = System.Drawing.Color.Empty;
+            this.txtTipoProducto.HintText = "";
+            this.txtTipoProducto.isPassword = false;
+            this.txtTipoProducto.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtTipoProducto.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtTipoProducto.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtTipoProducto.LineThickness = 3;
+            this.txtTipoProducto.Location = new System.Drawing.Point(458, 355);
+            this.txtTipoProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTipoProducto.Name = "txtTipoProducto";
+            this.txtTipoProducto.Size = new System.Drawing.Size(390, 33);
+            this.txtTipoProducto.TabIndex = 33;
+            this.txtTipoProducto.Text = "bunifuMaterialTextbox11";
+            this.txtTipoProducto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel17
+            // 
+            this.bunifuCustomLabel17.AutoSize = true;
+            this.bunifuCustomLabel17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel17.Location = new System.Drawing.Point(460, 331);
+            this.bunifuCustomLabel17.Name = "bunifuCustomLabel17";
+            this.bunifuCustomLabel17.Size = new System.Drawing.Size(132, 20);
+            this.bunifuCustomLabel17.TabIndex = 32;
+            this.bunifuCustomLabel17.Text = "Tipo de producto:";
+            // 
+            // cbActivo
+            // 
+            this.cbActivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.cbActivo.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.cbActivo.Checked = true;
+            this.cbActivo.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.cbActivo.ForeColor = System.Drawing.Color.White;
+            this.cbActivo.Location = new System.Drawing.Point(464, 458);
+            this.cbActivo.Name = "cbActivo";
+            this.cbActivo.Size = new System.Drawing.Size(20, 20);
+            this.cbActivo.TabIndex = 34;
+            // 
+            // cbDesa
+            // 
+            this.cbDesa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.cbDesa.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.cbDesa.Checked = true;
+            this.cbDesa.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.cbDesa.ForeColor = System.Drawing.Color.White;
+            this.cbDesa.Location = new System.Drawing.Point(656, 459);
+            this.cbDesa.Name = "cbDesa";
+            this.cbDesa.Size = new System.Drawing.Size(20, 20);
+            this.cbDesa.TabIndex = 35;
+            // 
+            // bunifuCustomLabel18
+            // 
+            this.bunifuCustomLabel18.AutoSize = true;
+            this.bunifuCustomLabel18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel18.Location = new System.Drawing.Point(490, 458);
+            this.bunifuCustomLabel18.Name = "bunifuCustomLabel18";
+            this.bunifuCustomLabel18.Size = new System.Drawing.Size(80, 20);
+            this.bunifuCustomLabel18.TabIndex = 36;
+            this.bunifuCustomLabel18.Text = "Habilitado";
+            // 
+            // bunifuCustomLabel19
+            // 
+            this.bunifuCustomLabel19.AutoSize = true;
+            this.bunifuCustomLabel19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel19.Location = new System.Drawing.Point(682, 458);
+            this.bunifuCustomLabel19.Name = "bunifuCustomLabel19";
+            this.bunifuCustomLabel19.Size = new System.Drawing.Size(91, 20);
+            this.bunifuCustomLabel19.TabIndex = 37;
+            this.bunifuCustomLabel19.Text = "Inhabilitado";
+            // 
+            // bunifuCustomLabel20
+            // 
+            this.bunifuCustomLabel20.AutoSize = true;
+            this.bunifuCustomLabel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel20.Location = new System.Drawing.Point(460, 422);
+            this.bunifuCustomLabel20.Name = "bunifuCustomLabel20";
+            this.bunifuCustomLabel20.Size = new System.Drawing.Size(132, 20);
+            this.bunifuCustomLabel20.TabIndex = 38;
+            this.bunifuCustomLabel20.Text = "Tipo de producto:";
+            // 
+            // txtClaveProducto
+            // 
+            this.txtClaveProducto.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtClaveProducto.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtClaveProducto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtClaveProducto.HintForeColor = System.Drawing.Color.Empty;
+            this.txtClaveProducto.HintText = "";
+            this.txtClaveProducto.isPassword = false;
+            this.txtClaveProducto.LineFocusedColor = System.Drawing.Color.Blue;
+            this.txtClaveProducto.LineIdleColor = System.Drawing.Color.Gray;
+            this.txtClaveProducto.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.txtClaveProducto.LineThickness = 3;
+            this.txtClaveProducto.Location = new System.Drawing.Point(458, 524);
+            this.txtClaveProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtClaveProducto.Name = "txtClaveProducto";
+            this.txtClaveProducto.Size = new System.Drawing.Size(390, 33);
+            this.txtClaveProducto.TabIndex = 40;
+            this.txtClaveProducto.Text = "bunifuMaterialTextbox12";
+            this.txtClaveProducto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel21
+            // 
+            this.bunifuCustomLabel21.AutoSize = true;
+            this.bunifuCustomLabel21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel21.Location = new System.Drawing.Point(454, 500);
+            this.bunifuCustomLabel21.Name = "bunifuCustomLabel21";
+            this.bunifuCustomLabel21.Size = new System.Drawing.Size(87, 20);
+            this.bunifuCustomLabel21.TabIndex = 39;
+            this.bunifuCustomLabel21.Text = "Clave SAT:";
+            // 
+            // Productos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(867, 570);
+            this.Controls.Add(this.txtClaveProducto);
+            this.Controls.Add(this.bunifuCustomLabel21);
+            this.Controls.Add(this.bunifuCustomLabel20);
+            this.Controls.Add(this.bunifuCustomLabel19);
+            this.Controls.Add(this.bunifuCustomLabel18);
+            this.Controls.Add(this.cbDesa);
+            this.Controls.Add(this.cbActivo);
+            this.Controls.Add(this.txtTipoProducto);
+            this.Controls.Add(this.bunifuCustomLabel17);
+            this.Controls.Add(this.bunifuCustomLabel16);
+            this.Controls.Add(this.ddlProveedor);
+            this.Controls.Add(this.bunifuCustomLabel15);
+            this.Controls.Add(this.ddlUnidadMedida);
+            this.Controls.Add(this.txtvalor_porCAntidad);
+            this.Controls.Add(this.bunifuCustomLabel14);
+            this.Controls.Add(this.txtutilidadUnit);
+            this.Controls.Add(this.bunifuCustomLabel12);
+            this.Controls.Add(this.txtPesoUnit);
+            this.Controls.Add(this.bunifuCustomLabel13);
+            this.Controls.Add(this.txtpre_ventadolar);
+            this.Controls.Add(this.bunifuCustomLabel10);
+            this.Controls.Add(this.txxtpre_ventaxmayor);
+            this.Controls.Add(this.bunifuCustomLabel11);
+            this.Controls.Add(this.txtpre_ventaxmenor);
+            this.Controls.Add(this.bunifuCustomLabel8);
+            this.Controls.Add(this.txtstock_actual);
+            this.Controls.Add(this.bunifuCustomLabel9);
+            this.Controls.Add(this.txtpre_compraD);
+            this.Controls.Add(this.bunifuCustomLabel7);
+            this.Controls.Add(this.txtpre_compraS);
+            this.Controls.Add(this.bunifuCustomLabel6);
+            this.Controls.Add(this.bunifuCustomLabel3);
+            this.Controls.Add(this.bunifuCustomLabel2);
+            this.Controls.Add(this.bunifuCustomLabel5);
+            this.Controls.Add(this.bunifuCustomLabel4);
+            this.Controls.Add(this.ddlCategoria);
+            this.Controls.Add(this.ddlMarca);
+            this.Controls.Add(this.bunifuMaterialTextbox1);
+            this.Controls.Add(this.bunifuCustomLabel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Productos";
+            this.Text = "Productos";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtvalor_porCAntidad;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel14;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtutilidadUnit;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel12;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtPesoUnit;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel13;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtpre_ventadolar;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txxtpre_ventaxmayor;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel11;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtpre_ventaxmenor;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtstock_actual;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtpre_compraD;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtpre_compraS;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
+        private Bunifu.Framework.UI.BunifuDropdown ddlCategoria;
+        private Bunifu.Framework.UI.BunifuDropdown ddlMarca;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtClaveProducto;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel21;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel20;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel19;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel18;
+        private Bunifu.Framework.UI.BunifuCheckbox cbDesa;
+        private Bunifu.Framework.UI.BunifuCheckbox cbActivo;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox txtTipoProducto;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel17;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel16;
+        private Bunifu.Framework.UI.BunifuDropdown ddlProveedor;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel15;
+        private Bunifu.Framework.UI.BunifuDropdown ddlUnidadMedida;
+    }
+}

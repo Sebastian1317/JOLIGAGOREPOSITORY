@@ -12,9 +12,11 @@ namespace JL_Modelos.Interfaces
         bool insertarProducto(BD_Producto producto);
         bool eliminarProducto(int? id_producto);
         bool actualizarProducto(BD_Producto producto);
+        BD_Producto obtenerproducto(int id_Producto);
         List<BD_Producto> obtenerProductos();
         List<BD_Producto> obtenerProductosPor(String descripcion_l, String proveedor);
         List<BD_Categoria> listarCategoria();
         List<BD_Marca> listarMarca();
+
     }
 }
