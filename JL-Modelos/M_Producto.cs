@@ -165,7 +165,7 @@ namespace JL_Modelos
                 }
                 else
                 {
-
+                    cnn.Close();
                     return null;
 
                 }
@@ -208,6 +208,7 @@ namespace JL_Modelos
                 }
                 else
                 {
+                    cnn.Close();
                     return null;
                 }
             }
@@ -216,6 +217,45 @@ namespace JL_Modelos
                 cnn.Close();
                 marcas = null;
                 throw new Exception("CN_Productos-listarMarca+ " + ex.Message);
+            }
+        }
+
+        public List<BD_Proveedor> listarProveedor()
+        {
+            List<BD_Proveedor> proveedores = new List<BD_Proveedor>();
+            try
+            {
+                cnn.Open();
+                SqlCommand command = new SqlCommand("proveedoresComboBox", cnn);
+                command.CommandType = CommandType.StoredProcedure;
+
+                SqlDataReader reader = command.ExecuteReader();
+                
+                if (reader.HasRows)
+                {
+
+                    BD_Proveedor proveedor = null;
+                    while (reader.Read())
+                    {
+                        proveedor = new BD_Proveedor();
+                        proveedor.idProvee = int.Parse(reader["IDPROVEE"].ToString());
+                        proveedor.nombre = reader["NOMBRE"].ToString();
+                        proveedores.Add(proveedor);
+                    }
+                    cnn.Close();
+                    return proveedores;
+
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                cnn.Close();
+                proveedores = null;
+                throw new Exception("CN_Productos-listarProveedor+ " + ex.Message);
             }
         }
 
@@ -263,6 +303,7 @@ namespace JL_Modelos
                 }
                 else
                 {
+                    cnn.Close();
                     return null;
                 }
             }
@@ -318,7 +359,7 @@ namespace JL_Modelos
                 }
                 else
                 {
-
+                    cnn.Close();
                     return null;
 
                 }
@@ -378,7 +419,7 @@ namespace JL_Modelos
                 }
                 else
                 {
-
+                    cnn.Close();
                     return null;
 
                 }

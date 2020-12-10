@@ -22,7 +22,7 @@ namespace JL_Utilidades
             }
         }
 
-        public static ComboBox cargarComboBox<T>(List<T> entidad, ComboBox comboBox,
+        public static void cargarComboBox<T>(List<T> entidad, ComboBox comboBox,
             String id,String nombre) where T : class{
 
 
@@ -32,18 +32,20 @@ namespace JL_Utilidades
                 comboBox.ValueMember = id;
                 comboBox.DataSource = entidad;
 
-                return comboBox;
             }
-            else {
-
-                return comboBox;
-            }
-
-
-
+            
         }
 
+        public static void cargarComboSinBaseDatos<T>(Dictionary<T,T>entidad,ComboBox comboBox)where T :class {
 
+            if (entidad.Count > 0 ) {
+
+                comboBox.DisplayMember ="Value";
+                comboBox.ValueMember = "Key";
+                comboBox.DataSource = new BindingSource(entidad,null);
+
+            }
+        }
 
     }
 }

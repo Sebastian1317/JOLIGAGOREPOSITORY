@@ -32,8 +32,6 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.ddlMarca = new Bunifu.Framework.UI.BunifuDropdown();
-            this.ddlCategoria = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -57,9 +55,7 @@
             this.txtvalor_porCAntidad = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel15 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.ddlUnidadMedida = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCustomLabel16 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.ddlProveedor = new Bunifu.Framework.UI.BunifuDropdown();
             this.txtTipoProducto = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel17 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.cbActivo = new Bunifu.Framework.UI.BunifuCheckbox();
@@ -69,6 +65,10 @@
             this.bunifuCustomLabel20 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtClaveProducto = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuCustomLabel21 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.ddlMarca1 = new System.Windows.Forms.ComboBox();
+            this.ddlCategoria = new System.Windows.Forms.ComboBox();
+            this.ddlUnidadMedida = new System.Windows.Forms.ComboBox();
+            this.ddlProveedor = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -105,36 +105,6 @@
             this.bunifuMaterialTextbox1.TabIndex = 3;
             this.bunifuMaterialTextbox1.Text = "bunifuMaterialTextbox1";
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // ddlMarca
-            // 
-            this.ddlMarca.BackColor = System.Drawing.Color.Transparent;
-            this.ddlMarca.BorderRadius = 3;
-            this.ddlMarca.DisabledColor = System.Drawing.Color.Gray;
-            this.ddlMarca.ForeColor = System.Drawing.Color.White;
-            this.ddlMarca.Items = new string[0];
-            this.ddlMarca.Location = new System.Drawing.Point(458, 61);
-            this.ddlMarca.Name = "ddlMarca";
-            this.ddlMarca.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ddlMarca.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.ddlMarca.selectedIndex = -1;
-            this.ddlMarca.Size = new System.Drawing.Size(192, 33);
-            this.ddlMarca.TabIndex = 4;
-            // 
-            // ddlCategoria
-            // 
-            this.ddlCategoria.BackColor = System.Drawing.Color.Transparent;
-            this.ddlCategoria.BorderRadius = 3;
-            this.ddlCategoria.DisabledColor = System.Drawing.Color.Gray;
-            this.ddlCategoria.ForeColor = System.Drawing.Color.White;
-            this.ddlCategoria.Items = new string[0];
-            this.ddlCategoria.Location = new System.Drawing.Point(656, 61);
-            this.ddlCategoria.Name = "ddlCategoria";
-            this.ddlCategoria.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ddlCategoria.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.ddlCategoria.selectedIndex = -1;
-            this.ddlCategoria.Size = new System.Drawing.Size(192, 33);
-            this.ddlCategoria.TabIndex = 5;
             // 
             // bunifuCustomLabel4
             // 
@@ -283,7 +253,7 @@
             this.txtstock_actual.Name = "txtstock_actual";
             this.txtstock_actual.Size = new System.Drawing.Size(176, 33);
             this.txtstock_actual.TabIndex = 15;
-            this.txtstock_actual.Text = "bunifuMaterialTextbox5";
+            this.txtstock_actual.Text = "0";
             this.txtstock_actual.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuCustomLabel9
@@ -456,21 +426,6 @@
             this.bunifuCustomLabel15.TabIndex = 29;
             this.bunifuCustomLabel15.Text = "Unidad de medida:";
             // 
-            // ddlUnidadMedida
-            // 
-            this.ddlUnidadMedida.BackColor = System.Drawing.Color.Transparent;
-            this.ddlUnidadMedida.BorderRadius = 3;
-            this.ddlUnidadMedida.DisabledColor = System.Drawing.Color.Gray;
-            this.ddlUnidadMedida.ForeColor = System.Drawing.Color.White;
-            this.ddlUnidadMedida.Items = new string[0];
-            this.ddlUnidadMedida.Location = new System.Drawing.Point(458, 183);
-            this.ddlUnidadMedida.Name = "ddlUnidadMedida";
-            this.ddlUnidadMedida.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ddlUnidadMedida.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.ddlUnidadMedida.selectedIndex = -1;
-            this.ddlUnidadMedida.Size = new System.Drawing.Size(390, 33);
-            this.ddlUnidadMedida.TabIndex = 28;
-            // 
             // bunifuCustomLabel16
             // 
             this.bunifuCustomLabel16.AutoSize = true;
@@ -480,21 +435,6 @@
             this.bunifuCustomLabel16.Size = new System.Drawing.Size(85, 20);
             this.bunifuCustomLabel16.TabIndex = 31;
             this.bunifuCustomLabel16.Text = "Proveedor:";
-            // 
-            // ddlProveedor
-            // 
-            this.ddlProveedor.BackColor = System.Drawing.Color.Transparent;
-            this.ddlProveedor.BorderRadius = 3;
-            this.ddlProveedor.DisabledColor = System.Drawing.Color.Gray;
-            this.ddlProveedor.ForeColor = System.Drawing.Color.White;
-            this.ddlProveedor.Items = new string[0];
-            this.ddlProveedor.Location = new System.Drawing.Point(458, 263);
-            this.ddlProveedor.Name = "ddlProveedor";
-            this.ddlProveedor.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.ddlProveedor.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.ddlProveedor.selectedIndex = -1;
-            this.ddlProveedor.Size = new System.Drawing.Size(390, 33);
-            this.ddlProveedor.TabIndex = 30;
             // 
             // txtTipoProducto
             // 
@@ -610,12 +550,64 @@
             this.bunifuCustomLabel21.TabIndex = 39;
             this.bunifuCustomLabel21.Text = "Clave SAT:";
             // 
+            // ddlMarca1
+            // 
+            this.ddlMarca1.DropDownHeight = 150;
+            this.ddlMarca1.DropDownWidth = 130;
+            this.ddlMarca1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlMarca1.FormattingEnabled = true;
+            this.ddlMarca1.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.ddlMarca1.Location = new System.Drawing.Point(458, 73);
+            this.ddlMarca1.Name = "ddlMarca1";
+            this.ddlMarca1.Size = new System.Drawing.Size(169, 21);
+            this.ddlMarca1.TabIndex = 41;
+            // 
+            // ddlCategoria
+            // 
+            this.ddlCategoria.DropDownHeight = 150;
+            this.ddlCategoria.DropDownWidth = 130;
+            this.ddlCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlCategoria.FormattingEnabled = true;
+            this.ddlCategoria.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.ddlCategoria.Location = new System.Drawing.Point(656, 73);
+            this.ddlCategoria.Name = "ddlCategoria";
+            this.ddlCategoria.Size = new System.Drawing.Size(192, 21);
+            this.ddlCategoria.TabIndex = 42;
+            // 
+            // ddlUnidadMedida
+            // 
+            this.ddlUnidadMedida.DropDownHeight = 150;
+            this.ddlUnidadMedida.DropDownWidth = 130;
+            this.ddlUnidadMedida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlUnidadMedida.FormattingEnabled = true;
+            this.ddlUnidadMedida.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.ddlUnidadMedida.Location = new System.Drawing.Point(458, 195);
+            this.ddlUnidadMedida.Name = "ddlUnidadMedida";
+            this.ddlUnidadMedida.Size = new System.Drawing.Size(390, 21);
+            this.ddlUnidadMedida.TabIndex = 43;
+            // 
+            // ddlProveedor
+            // 
+            this.ddlProveedor.DropDownHeight = 150;
+            this.ddlProveedor.DropDownWidth = 130;
+            this.ddlProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ddlProveedor.FormattingEnabled = true;
+            this.ddlProveedor.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.ddlProveedor.Location = new System.Drawing.Point(458, 275);
+            this.ddlProveedor.Name = "ddlProveedor";
+            this.ddlProveedor.Size = new System.Drawing.Size(390, 21);
+            this.ddlProveedor.TabIndex = 44;
+            // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(867, 570);
+            this.Controls.Add(this.ddlProveedor);
+            this.Controls.Add(this.ddlUnidadMedida);
+            this.Controls.Add(this.ddlCategoria);
+            this.Controls.Add(this.ddlMarca1);
             this.Controls.Add(this.txtClaveProducto);
             this.Controls.Add(this.bunifuCustomLabel21);
             this.Controls.Add(this.bunifuCustomLabel20);
@@ -626,9 +618,7 @@
             this.Controls.Add(this.txtTipoProducto);
             this.Controls.Add(this.bunifuCustomLabel17);
             this.Controls.Add(this.bunifuCustomLabel16);
-            this.Controls.Add(this.ddlProveedor);
             this.Controls.Add(this.bunifuCustomLabel15);
-            this.Controls.Add(this.ddlUnidadMedida);
             this.Controls.Add(this.txtvalor_porCAntidad);
             this.Controls.Add(this.bunifuCustomLabel14);
             this.Controls.Add(this.txtutilidadUnit);
@@ -651,8 +641,6 @@
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.bunifuCustomLabel5);
             this.Controls.Add(this.bunifuCustomLabel4);
-            this.Controls.Add(this.ddlCategoria);
-            this.Controls.Add(this.ddlMarca);
             this.Controls.Add(this.bunifuMaterialTextbox1);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -689,8 +677,6 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
-        private Bunifu.Framework.UI.BunifuDropdown ddlCategoria;
-        private Bunifu.Framework.UI.BunifuDropdown ddlMarca;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtClaveProducto;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel21;
@@ -702,8 +688,10 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtTipoProducto;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel17;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel16;
-        private Bunifu.Framework.UI.BunifuDropdown ddlProveedor;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel15;
-        private Bunifu.Framework.UI.BunifuDropdown ddlUnidadMedida;
+        private System.Windows.Forms.ComboBox ddlMarca1;
+        private System.Windows.Forms.ComboBox ddlCategoria;
+        private System.Windows.Forms.ComboBox ddlProveedor;
+        private System.Windows.Forms.ComboBox ddlUnidadMedida;
     }
 }

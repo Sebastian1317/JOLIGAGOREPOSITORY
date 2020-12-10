@@ -17,6 +17,6 @@ namespace JL_Modelos.Interfaces
         List<BD_Producto> obtenerProductosPor(String descripcion_l, String proveedor);
         List<BD_Categoria> listarCategoria();
         List<BD_Marca> listarMarca();
-
+        List<BD_Proveedor> listarProveedor();
     }
 }

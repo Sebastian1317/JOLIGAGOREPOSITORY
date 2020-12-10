@@ -46,3 +46,4 @@ C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\JL-Validaciones.pdb
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\JL-Utilidades.dll
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\JL-Utilidades.pdb
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Productos.Productos.resources

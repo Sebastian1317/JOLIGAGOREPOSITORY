@@ -15,7 +15,7 @@ namespace JL_Capa_De_Negocio
     {
         private M_IProducto iproducto = new M_Producto();
 
-        bool insertarProducto(BD_Producto producto) {
+        public bool insertarProducto(BD_Producto producto) {
             try {
 
                 iproducto.insertarProducto(producto);
@@ -27,7 +27,7 @@ namespace JL_Capa_De_Negocio
                 return false;
             }
         }
-        bool eliminarProducto(int? id_producto) {
+        public bool eliminarProducto(int? id_producto) {
 
             try
             {
@@ -42,7 +42,7 @@ namespace JL_Capa_De_Negocio
             }
 
         }
-        bool actualizarProducto(BD_Producto producto) {
+        public bool actualizarProducto(BD_Producto producto) {
 
             try
             {
@@ -66,7 +66,7 @@ namespace JL_Capa_De_Negocio
             }
 
         }
-        BD_Producto obtenerproducto(int id_Producto) {
+        public BD_Producto obtenerproducto(int id_Producto) {
 
             try
             {
@@ -81,7 +81,7 @@ namespace JL_Capa_De_Negocio
                 return null;
             }
         }
-        void obtenerProductos(DataGridView dataGridView) {
+        public void obtenerProductos(DataGridView dataGridView) {
 
             try {
 
@@ -92,7 +92,7 @@ namespace JL_Capa_De_Negocio
                 MessageBox.Show("+CN_Producto:obtenerProductos: "+ex.Message);
             }
         }
-        void obtenerProductosPor(String descripcion_l, String proveedor,DataGridView dataGridView) {
+        public void obtenerProductosPor(String descripcion_l, String proveedor,DataGridView dataGridView) {
 
             try
             {
@@ -107,7 +107,7 @@ namespace JL_Capa_De_Negocio
             }
 
         }
-        void listarCategoria(ComboBox comboBox) {
+        public void listarCategoria(ComboBox comboBox) {
 
             try
             {
@@ -122,7 +122,7 @@ namespace JL_Capa_De_Negocio
             }
 
         }
-        void listarMarca(ComboBox comboBox) {
+        public void listarMarca(ComboBox comboBox) {
 
             try
             {
@@ -132,6 +132,39 @@ namespace JL_Capa_De_Negocio
             {
 
                 MessageBox.Show("+CN_Producto:listarMarca: " + ex.Message);
+            }
+
+
+        }
+        public void listarProveedores(ComboBox comboBox) {
+
+            try {
+
+                Utilidades.cargarComboBox(iproducto.listarProveedor(), comboBox, "idProvee", "nombre");
+                
+            } catch (Exception ex) {
+
+                MessageBox.Show("+CN_Producto-listarProveedores: "+ex.Message);
+            }
+
+        }
+        public void listarUnidadMedida(ComboBox comboBox) {
+
+            try
+            {
+                Dictionary<String, String> unidadesMedida = new Dictionary<String, string>();
+
+                unidadesMedida.Add("H87", "Pieza");
+                unidadesMedida.Add("MTR", "Metro");
+                unidadesMedida.Add("LTR", "Litro");
+                unidadesMedida.Add("DPC", "Docena de piezas");
+                
+                Utilidades.cargarComboSinBaseDatos(unidadesMedida, comboBox);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("+CN_Producto-listarProveedores: " + ex.Message);
             }
 
 
