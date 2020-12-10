@@ -36,6 +36,7 @@ namespace JL_Modelos
                 command.CommandType = CommandType.StoredProcedure;
 
                 command.Parameters.AddWithValue("@Id_DocComp",compras.id_DocComp);
+                command.Parameters.AddWithValue("@IDProvee", compras.iDPROVEE.idProvee);
                 command.Parameters.AddWithValue("@NroFac_Fisico",compras.nroFac_Fisico);
                 command.Parameters.AddWithValue("@SubTotal_ingre",compras.subTotal_ingre);
                 command.Parameters.AddWithValue("@Fecha_Ingre",DateTime.Now);
@@ -56,17 +57,18 @@ namespace JL_Modelos
 
                 #region insertar El detalle 
                 SqlCommand command2 = new SqlCommand("DetalleCompraProductos", cnn);
-                command.CommandType = CommandType.StoredProcedure;
+                command2.CommandType = CommandType.StoredProcedure;
 
                 foreach (var producto in compras.productos)
                 {
+                    command2.Parameters.AddWithValue("@Id_DetalleDocum", "1");
                     command2.Parameters.AddWithValue("@id_DocComp", compras.id_DocComp);
                     command2.Parameters.AddWithValue("@Id_Pro", producto.Id_Pro);
                     command2.Parameters.AddWithValue("@PrecioUnit", producto.pre_CompraS);
                     command2.Parameters.AddWithValue("@Cantidad",producto.cantidad);
-                    command2.Parameters.AddWithValue("@Importe", compras.id_DocComp);
+                    command2.Parameters.AddWithValue("@Importe", (producto.pre_CompraS*producto.cantidad));
 
-                    command.ExecuteNonQuery();
+                    command2.ExecuteNonQuery();
                 }
 
                 cnn.Close();
@@ -83,7 +85,7 @@ namespace JL_Modelos
             }
         }
 
-        public char obtnerIDCompra(int idTipoDoc)
+        public String obtnerIDCompra(int idTipoDoc)
         {
             try {
 
@@ -95,7 +97,7 @@ namespace JL_Modelos
                 String idDocumento = command.ExecuteScalar().ToString();
 
                 cnn.Close();
-                return char.Parse(idDocumento);
+                return idDocumento;
 
             } catch (Exception ex) {
 

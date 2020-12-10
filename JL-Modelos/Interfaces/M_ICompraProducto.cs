@@ -11,6 +11,6 @@ namespace JL_Modelos.Interfaces
     {
         bool insertarCompra(BD_DocumentoCompras compras);
         bool devolucionCompra(int id_Compra);
-        char obtnerIDCompra(int idTipoDoc);
+        String obtnerIDCompra(int idTipoDoc);
     }
 }

@@ -18,8 +18,8 @@ namespace JL_Capa_De_Negocio
         public bool insertarCompra(BD_DocumentoCompras compras) {
             try {
 
-                char idgenerate = obtnerIDCompra();
-                if (idgenerate != ' ')
+                string idgenerate = obtnerIDCompra();
+                if (idgenerate != null)
                     compras.id_DocComp = idgenerate;
                 return icompra.insertarCompra(compras);
             } catch (Exception ex) {
@@ -41,7 +41,7 @@ namespace JL_Capa_De_Negocio
                 return false;
             }
         }
-        private char obtnerIDCompra() {
+        private String obtnerIDCompra() {
             try
             {
                 return icompra.obtnerIDCompra(7);
@@ -49,7 +49,7 @@ namespace JL_Capa_De_Negocio
             catch (Exception ex)
             {
                 MessageBox.Show("+CN_Compras-obtnerIDCompra: " + ex.Message);
-                return Convert.ToChar("");
+                return null;
             }
 
         }

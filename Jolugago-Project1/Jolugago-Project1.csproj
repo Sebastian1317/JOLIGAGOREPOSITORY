@@ -53,6 +53,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Compras\CompraPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\CompraPrincipal.Designer.cs">
+      <DependentUpon>CompraPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\GenerarCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\GenerarCompra.Designer.cs">
+      <DependentUpon>GenerarCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

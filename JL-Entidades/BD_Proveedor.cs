@@ -23,6 +23,11 @@ namespace JL_Entidades
         {    
         }
 
+        public BD_Proveedor(int idProvee)
+        {
+            this.idProvee = idProvee;
+        }
+
         public BD_Proveedor(int idProvee, string nombre, string direccion, string telefono, string rubro, string rfc,
             string correo, string contacto, string foto_logo, string estado_provdr)
         {

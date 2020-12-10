@@ -8,7 +8,7 @@ namespace JL_Entidades
 {
     public class BD_DocumentoCompras
     {
-        public char id_DocComp { get; set; }
+        public String id_DocComp { get; set; }
         public char nroFac_Fisico { get; set; }
         public BD_Proveedor iDPROVEE { get; set; }
         public decimal subTotal_ingre { get; set; }
@@ -23,17 +23,17 @@ namespace JL_Entidades
         public String datos_Adicional { get; set; }
         public String tipoDoc_Compra { get; set; }
         public List<BD_Producto> productos { get; set; }
-        public decimal cantidad { get; set; }
+     
 
         public BD_DocumentoCompras()
         {
         }
 
-        public BD_DocumentoCompras(char id_DocComp, char nroFac_Fisico,
+        public BD_DocumentoCompras(String id_DocComp, char nroFac_Fisico,
             BD_Proveedor iDPROVEE, decimal subTotal_ingre, DateTime echa_Ingre,
             decimal total_Ingre, BD_Usuario id_Usu, string modalidadPago, 
             int tiempoEspera, DateTime fecha_Vencimiento, string estado_Ingre, bool recibiconforme, string datos_Adicional, 
-            string tipoDoc_Compra, List<BD_Producto> productos,decimal cantidad)
+            string tipoDoc_Compra, List<BD_Producto> productos)
         {
             this.id_DocComp = id_DocComp;
             this.nroFac_Fisico = nroFac_Fisico;
@@ -50,7 +50,7 @@ namespace JL_Entidades
             this.datos_Adicional = datos_Adicional;
             this.tipoDoc_Compra = tipoDoc_Compra;
             this.productos = productos;
-            this.cantidad = cantidad;
+            
         }
     }
 }
