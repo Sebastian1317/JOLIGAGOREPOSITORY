@@ -15,7 +15,7 @@ namespace JL_Modelos
             throw new NotImplementedException();
         }
 
-        public bool insertarKardex(BD_Kardex kardex)
+        public bool insertarKardex(BD_Kardex kardex, int idProvee, int idPro)
         {
             throw new NotImplementedException();
         }

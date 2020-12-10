@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace JL_Modelos.Interfaces
 {
-    public interface M_IKardex
+   public interface M_ICompraProducto
     {
-        bool insertarKardex(BD_Kardex kardex,int idProvee,int idPro);
-        bool actualizarDetalleKardeKardex(BD_Kardex kardex);
-     
+        bool insertarCompra(BD_DocumentoCompras compras);
+        bool devolucionCompra(int id_Compra);
+        char obtnerIDCompra(int idTipoDoc);
     }
 }

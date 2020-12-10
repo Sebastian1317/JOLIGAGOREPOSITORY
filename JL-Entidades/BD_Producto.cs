@@ -29,9 +29,18 @@ namespace JL_Entidades
         public String estado_Pro { get; set; }
         public String id_ProductoFact { get; set; }
         public String claveProducto { get; set; }
+ 
+        public decimal cantidad { get; set; }
 
         public BD_Producto()
         {
+        }
+
+        public BD_Producto(int id_Pro, decimal cantidad,decimal pre_CompraS)
+        {
+            Id_Pro = id_Pro;
+            this.cantidad = cantidad;
+            this.pre_CompraS = pre_CompraS;
         }
 
         public BD_Producto(int id_Pro, BD_Proveedor idProvee, string descripcion_larga, 
