@@ -1,6 +1,7 @@
 ﻿using JL_Entidades;
 using JL_Modelos;
 using JL_Modelos.Interfaces;
+using JL_Utilidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,8 @@ namespace JL_Capa_De_Negocio
             }
 
         }
-       public bool devolucionCompra(int id_Compra) {
+
+        public bool devolucionCompra(int id_Compra) {
             
             try
             {
@@ -41,6 +43,7 @@ namespace JL_Capa_De_Negocio
                 return false;
             }
         }
+
         private String obtnerIDCompra() {
             try
             {
@@ -54,7 +57,19 @@ namespace JL_Capa_De_Negocio
 
         }
 
+        public void listarCompras(DataGridView dataGridView)
+        {
+            try
+            {
 
+                Utilidades.cargarGridAvamzado(icompra.listarCompras(),dataGridView);
 
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("+CN_Compras-listarCompras: "+ex.Message);
+            }
+        }
     }
 }

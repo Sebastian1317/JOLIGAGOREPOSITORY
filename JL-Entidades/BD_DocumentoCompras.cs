@@ -52,5 +52,19 @@ namespace JL_Entidades
             this.productos = productos;
             
         }
+
+        public BD_DocumentoCompras(string id_DocComp,String nombre, DateTime echa_Ingre, 
+            decimal total_Ingre, string modalidadPago, string tipoDoc_Compra)
+        {
+
+            BD_Proveedor pro = new BD_Proveedor();
+            
+            this.id_DocComp = id_DocComp;
+            this.iDPROVEE.nombre = nombre;
+            this.echa_Ingre = echa_Ingre;
+            this.total_Ingre = total_Ingre;
+            this.modalidadPago = modalidadPago;
+            this.tipoDoc_Compra = tipoDoc_Compra;
+        }
     }
 }

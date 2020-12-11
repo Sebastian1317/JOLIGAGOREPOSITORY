@@ -22,10 +22,36 @@ namespace JL_Utilidades
             }
         }
 
+        public static void cargarGridAvamzado<T>(List<T>lista,DataGridView dataGridView)where T : class {
+            
+            var props = typeof(T).GetProperties();
+            var props2 = typeof(T).GetProperties();
+            int i = 0;
+
+            foreach (var prop in props)
+            {
+                dataGridView.Columns.Add(prop.Name.ToString(), prop.Name.ToString());
+            }
+
+                i++;
+            
+
+            foreach (var item in lista)
+            {
+
+                    foreach (var prop2 in props2)
+                    {
+                        dataGridView.Rows.Add(prop2.GetValue(item));
+
+                    } 
+               
+                i++;
+            }
+        }
+
         public static void cargarComboBox<T>(List<T> entidad, ComboBox comboBox,
             String id,String nombre) where T : class{
-
-
+            
             if (entidad.Count > 0)
             {   
                 comboBox.DisplayMember = nombre;

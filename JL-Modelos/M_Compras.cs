@@ -61,7 +61,7 @@ namespace JL_Modelos
 
                 foreach (var producto in compras.productos)
                 {
-                    command2.Parameters.AddWithValue("@Id_DetalleDocum", "1");
+                    command2.Parameters.AddWithValue("@Id_DetalleDocum", "D"+compras.id_DocComp);
                     command2.Parameters.AddWithValue("@id_DocComp", compras.id_DocComp);
                     command2.Parameters.AddWithValue("@Id_Pro", producto.Id_Pro);
                     command2.Parameters.AddWithValue("@PrecioUnit", producto.pre_CompraS);
@@ -82,6 +82,52 @@ namespace JL_Modelos
 
                 cnn.Close();
                 throw new Exception("M_Compras-insertarCompra: " + ex.Message);
+            }
+        }
+
+        public List<BD_DocumentoCompras> listarCompras()
+        {
+            List<BD_DocumentoCompras> compras = new List<BD_DocumentoCompras>();
+            try
+            {
+                cnn.Open();
+                SqlCommand command = new SqlCommand("listarComprasProductos", cnn);
+                command.CommandType = CommandType.StoredProcedure;
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+
+                    BD_DocumentoCompras compra = null;
+                    while (reader.Read())
+                    {
+                        compra = new BD_DocumentoCompras();
+
+                        compra.id_DocComp = reader["Id_DocComp"].ToString();
+                        compra.iDPROVEE = new BD_Proveedor();
+                        compra.iDPROVEE.nombre = reader["nombre"].ToString();
+                        compra.echa_Ingre = DateTime.Parse(reader["Fecha_Ingre"].ToString());
+                        compra.total_Ingre = decimal.Parse(reader["Total_Ingre"].ToString());
+                        compra.tipoDoc_Compra = reader["TipoDoc_Compra"].ToString();
+                        compra.modalidadPago = reader["ModalidadPago"].ToString();
+
+                        compras.Add(compra);
+                    }
+                    cnn.Close();
+                    return compras;
+
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                cnn.Close();
+                compras = null;
+                throw new Exception("M_Compras-listarCompras+ " + ex.Message);
             }
         }
 

@@ -13,7 +13,7 @@ namespace Jolugago_Project1
         static void Main(String [] args) {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Compras.GenerarCompra());
+            Application.Run(new Compras.CompraPrincipal());
         }
     }
 }
