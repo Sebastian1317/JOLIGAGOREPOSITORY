@@ -22,30 +22,12 @@ namespace JL_Utilidades
             }
         }
 
-        public static void cargarGridAvamzado<T>(List<T>lista,DataGridView dataGridView)where T : class {
-            
-            var props = typeof(T).GetProperties();
-            var props2 = typeof(T).GetProperties();
-            int i = 0;
+        public static void cargarCabecera<T>(String[] cabeceras,DataGridView dataGridView)where T : class {
 
-            foreach (var prop in props)
+
+            foreach (var cabecera in cabeceras)
             {
-                dataGridView.Columns.Add(prop.Name.ToString(), prop.Name.ToString());
-            }
-
-                i++;
-            
-
-            foreach (var item in lista)
-            {
-
-                    foreach (var prop2 in props2)
-                    {
-                        dataGridView.Rows.Add(prop2.GetValue(item));
-
-                    } 
-               
-                i++;
+                dataGridView.Columns.Add(cabecera, cabecera);
             }
         }
 

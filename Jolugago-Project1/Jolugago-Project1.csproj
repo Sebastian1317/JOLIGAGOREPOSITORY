@@ -71,6 +71,18 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenusBarras\BarrasMenus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenusBarras\BarrasMenus.Designer.cs">
+      <DependentUpon>BarrasMenus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel Principal.Designer.cs">
+      <DependentUpon>Panel Principal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Productos\OperacionesProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +115,12 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenusBarras\BarrasMenus.resx">
+      <DependentUpon>BarrasMenus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel Principal.resx">
+      <DependentUpon>Panel Principal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Productos\Productos.resx">
       <DependentUpon>Productos.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +132,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Proveedor\InsertarProveedor.resx">
       <DependentUpon>InsertarProveedor.cs</DependentUpon>
@@ -143,7 +162,37 @@
       <Project>{f35466d2-dcb9-4061-8350-a62fc65eb03b}</Project>
       <Name>JL-Entidades</Name>
     </ProjectReference>
+    <ProjectReference Include="..\JL-Utilidades\JL-Utilidades.csproj">
+      <Project>{2CCFB9CB-84C2-4644-9F8E-62CE3D602CDC}</Project>
+      <Name>JL-Utilidades</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\HamburguerLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2044284-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2044284-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\743823-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\743823-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2123874-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2123874-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1303875-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1303875-32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

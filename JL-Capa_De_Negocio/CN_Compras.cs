@@ -62,8 +62,26 @@ namespace JL_Capa_De_Negocio
             try
             {
 
-                Utilidades.cargarGridAvamzado(icompra.listarCompras(),dataGridView);
+                //String[] cabeceras = new String[6];
+                //cabeceras[0] = "Num. Compra";
+                //cabeceras[1] = "Proveedor";
+                //cabeceras[2] = "Fecha de registro";
+                //cabeceras[3] = "Total de ingresos";
+                //cabeceras[4] = "Tipo de compra";
+                //cabeceras[5] = "Modalidad de pago";
 
+                //foreach (var cabecera in cabeceras)
+                //{
+                //    dataGridView.Columns.Add(cabecera, cabecera);
+                //}
+
+                foreach (var item in icompra.listarCompras())
+                {
+                    dataGridView.Rows.Add(item.id_DocComp.ToString(), 
+                        item.iDPROVEE.nombre,item.echa_Ingre.ToString(),
+                        item.total_Ingre.ToString(),item.tipoDoc_Compra.ToString(),
+                        item.modalidadPago.ToString());
+                }
             }
             catch (Exception ex)
             {
