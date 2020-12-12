@@ -105,7 +105,6 @@ namespace Jolugago_Project1
         }
 
         public void EscogerMenu(Form formulario) {
-
             
             formularioR = MostrarFormularios.MostrarFormulario(this.PanelContainer, formulario);
             formularioR.Size = this.PanelContainer.Size;

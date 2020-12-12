@@ -12,8 +12,18 @@ namespace JL_Utilidades
 
         public static Form MostrarFormulario(Panel panel,Form formulario) {
 
+
+            
             if (panel.Controls.Count > 0)
             {
+                foreach (Control control in panel.Controls)
+                {
+                    if (control.GetType().Name != "")
+                    {
+                        control.Dispose();
+                    }
+                    
+                }
                 panel.Controls.Clear();
             }
             
