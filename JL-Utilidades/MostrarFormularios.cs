@@ -10,14 +10,19 @@ namespace JL_Utilidades
    public class MostrarFormularios
     {
 
-        public static void MostrarFormulario<T>(Panel panel,Form formulario)where T : Form {
+        public static Form MostrarFormulario(Panel panel,Form formulario) {
 
+            if (panel.Controls.Count > 0)
+            {
+                panel.Controls.Clear();
+            }
             
-            //formulario = new T();
             formulario.TopLevel = false;
             panel.Controls.Add(formulario);
-            panel.Tag = formulario;
+            panel.Tag = formulario;            
             formulario.Show();
+
+            return formulario;
 
         }
 

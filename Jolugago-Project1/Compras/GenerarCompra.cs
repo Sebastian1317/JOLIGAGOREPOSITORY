@@ -19,7 +19,7 @@ namespace Jolugago_Project1.Compras
         public GenerarCompra()
         {
             InitializeComponent();
-            codigo_de_prueba();
+            //codigo_de_prueba();
         }
 
         private BD_DocumentoCompras compra = null;

@@ -50,3 +50,4 @@ C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Compras.CompraPrincipal.resources
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Panel_Principal.resources
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.MenusBarras.BarrasMenus.resources
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Compras.GenerarCompra.resources

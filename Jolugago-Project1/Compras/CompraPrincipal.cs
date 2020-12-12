@@ -1,5 +1,6 @@
 ﻿using JL_Capa_De_Negocio;
 using JL_Entidades;
+using JL_Utilidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,5 +31,17 @@ namespace Jolugago_Project1.Compras
 
         }
 
+
+        private void dgvCompras_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnIngreso_Click(object sender, EventArgs e)
+        {
+            GenerarCompra g = new GenerarCompra();
+
+            MostrarFormularios.MostrarFormulario(Panel_Principal.panelCargar, g);
+        }
     }
 }

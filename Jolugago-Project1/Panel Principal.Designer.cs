@@ -35,6 +35,7 @@
             this.PanelContainer = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.PanelVertical = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnGraficas = new System.Windows.Forms.Button();
             this.panelFoto = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.Foto = new Bunifu.Framework.UI.BunifuImageButton();
             this.lblRol = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -63,6 +64,7 @@
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 9;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // PanelContainer
             // 
@@ -85,7 +87,7 @@
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Maroon;
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.White;
@@ -99,6 +101,7 @@
             // 
             this.PanelVertical.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelVertical.BackgroundImage")));
             this.PanelVertical.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PanelVertical.Controls.Add(this.btnGraficas);
             this.PanelVertical.Controls.Add(this.panelFoto);
             this.PanelVertical.Controls.Add(this.btnPrueba);
             this.PanelVertical.Dock = System.Windows.Forms.DockStyle.Left;
@@ -112,11 +115,27 @@
             this.PanelVertical.Size = new System.Drawing.Size(270, 721);
             this.PanelVertical.TabIndex = 1;
             // 
+            // btnGraficas
+            // 
+            this.btnGraficas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(116)))), ((int)(((byte)(195)))));
+            this.btnGraficas.FlatAppearance.BorderSize = 0;
+            this.btnGraficas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGraficas.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGraficas.ForeColor = System.Drawing.Color.White;
+            this.btnGraficas.Image = global::Jolugago_Project1.Properties.Resources._2044284_48;
+            this.btnGraficas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGraficas.Location = new System.Drawing.Point(0, 243);
+            this.btnGraficas.Name = "btnGraficas";
+            this.btnGraficas.Size = new System.Drawing.Size(270, 38);
+            this.btnGraficas.TabIndex = 3;
+            this.btnGraficas.Text = "Graficas";
+            this.btnGraficas.UseVisualStyleBackColor = false;
+            this.btnGraficas.Click += new System.EventHandler(this.btnGraficas_Click);
+            // 
             // panelFoto
             // 
             this.panelFoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelFoto.BackgroundImage")));
             this.panelFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelFoto.Controls.Add(this.Foto);
             this.panelFoto.Controls.Add(this.lblRol);
             this.panelFoto.Controls.Add(this.btnEditarP);
@@ -196,14 +215,18 @@
             // 
             // btnPrueba
             // 
-            this.btnPrueba.BackColor = System.Drawing.Color.White;
+            this.btnPrueba.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(116)))), ((int)(((byte)(195)))));
             this.btnPrueba.FlatAppearance.BorderSize = 0;
             this.btnPrueba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrueba.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrueba.ForeColor = System.Drawing.Color.White;
             this.btnPrueba.Image = global::Jolugago_Project1.Properties.Resources._2044284_48;
-            this.btnPrueba.Location = new System.Drawing.Point(0, 264);
+            this.btnPrueba.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPrueba.Location = new System.Drawing.Point(0, 205);
             this.btnPrueba.Name = "btnPrueba";
             this.btnPrueba.Size = new System.Drawing.Size(270, 38);
             this.btnPrueba.TabIndex = 2;
+            this.btnPrueba.Text = "Compras";
             this.btnPrueba.UseVisualStyleBackColor = false;
             this.btnPrueba.Click += new System.EventHandler(this.btnPrueba_Click);
             // 
@@ -226,6 +249,7 @@
             this.PanelArriba.Quality = 10;
             this.PanelArriba.Size = new System.Drawing.Size(1308, 41);
             this.PanelArriba.TabIndex = 0;
+            this.PanelArriba.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelArriba_Paint);
             // 
             // btmMiz
             // 
@@ -248,7 +272,7 @@
             this.btnMizT.Image = global::Jolugago_Project1.Properties.Resources._2123874_32;
             this.btnMizT.Location = new System.Drawing.Point(1196, 2);
             this.btnMizT.Name = "btnMizT";
-            this.btnMizT.Size = new System.Drawing.Size(50, 35);
+            this.btnMizT.Size = new System.Drawing.Size(46, 35);
             this.btnMizT.TabIndex = 2;
             this.btnMizT.UseVisualStyleBackColor = false;
             this.btnMizT.Click += new System.EventHandler(this.btnMizT_Click);
@@ -334,7 +358,6 @@
         private Bunifu.Framework.UI.BunifuGradientPanel PanelVertical;
         private Bunifu.Framework.UI.BunifuElipse Formulario;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private Bunifu.Framework.UI.BunifuGradientPanel PanelContainer;
         private System.Windows.Forms.Button btnMin;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnPrueba;
@@ -348,5 +371,7 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btmMiz;
         private System.Windows.Forms.Button btnMizT;
+        private System.Windows.Forms.Button btnGraficas;
+        public Bunifu.Framework.UI.BunifuGradientPanel PanelContainer;
     }
 }
