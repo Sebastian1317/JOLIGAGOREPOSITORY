@@ -35,6 +35,8 @@
             this.PanelContainer = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.PanelVertical = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnProductos = new System.Windows.Forms.Button();
+            this.btnProveedores = new System.Windows.Forms.Button();
             this.btnGraficas = new System.Windows.Forms.Button();
             this.panelFoto = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.Foto = new Bunifu.Framework.UI.BunifuImageButton();
@@ -78,7 +80,7 @@
             this.PanelContainer.Location = new System.Drawing.Point(270, 41);
             this.PanelContainer.Name = "PanelContainer";
             this.PanelContainer.Quality = 10;
-            this.PanelContainer.Size = new System.Drawing.Size(1038, 687);
+            this.PanelContainer.Size = new System.Drawing.Size(774, 687);
             this.PanelContainer.TabIndex = 4;
             this.PanelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelContainer_Paint);
             // 
@@ -94,13 +96,15 @@
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(270, 728);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1038, 34);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(774, 34);
             this.bunifuGradientPanel1.TabIndex = 3;
             // 
             // PanelVertical
             // 
             this.PanelVertical.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelVertical.BackgroundImage")));
             this.PanelVertical.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PanelVertical.Controls.Add(this.btnProductos);
+            this.PanelVertical.Controls.Add(this.btnProveedores);
             this.PanelVertical.Controls.Add(this.btnGraficas);
             this.PanelVertical.Controls.Add(this.panelFoto);
             this.PanelVertical.Controls.Add(this.btnPrueba);
@@ -114,6 +118,40 @@
             this.PanelVertical.Quality = 10;
             this.PanelVertical.Size = new System.Drawing.Size(270, 721);
             this.PanelVertical.TabIndex = 1;
+            // 
+            // btnProductos
+            // 
+            this.btnProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(116)))), ((int)(((byte)(195)))));
+            this.btnProductos.FlatAppearance.BorderSize = 0;
+            this.btnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductos.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductos.ForeColor = System.Drawing.Color.White;
+            this.btnProductos.Image = global::Jolugago_Project1.Properties.Resources._2044284_48;
+            this.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProductos.Location = new System.Drawing.Point(0, 326);
+            this.btnProductos.Name = "btnProductos";
+            this.btnProductos.Size = new System.Drawing.Size(270, 38);
+            this.btnProductos.TabIndex = 5;
+            this.btnProductos.Text = "Productos";
+            this.btnProductos.UseVisualStyleBackColor = false;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
+            // 
+            // btnProveedores
+            // 
+            this.btnProveedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(116)))), ((int)(((byte)(195)))));
+            this.btnProveedores.FlatAppearance.BorderSize = 0;
+            this.btnProveedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProveedores.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProveedores.ForeColor = System.Drawing.Color.White;
+            this.btnProveedores.Image = global::Jolugago_Project1.Properties.Resources._2044284_48;
+            this.btnProveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProveedores.Location = new System.Drawing.Point(0, 283);
+            this.btnProveedores.Name = "btnProveedores";
+            this.btnProveedores.Size = new System.Drawing.Size(270, 38);
+            this.btnProveedores.TabIndex = 4;
+            this.btnProveedores.Text = "Proveedores";
+            this.btnProveedores.UseVisualStyleBackColor = false;
+            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
             // btnGraficas
             // 
@@ -156,9 +194,9 @@
             this.Foto.BackColor = System.Drawing.Color.Transparent;
             this.Foto.Image = ((System.Drawing.Image)(resources.GetObject("Foto.Image")));
             this.Foto.ImageActive = null;
-            this.Foto.Location = new System.Drawing.Point(87, 8);
+            this.Foto.Location = new System.Drawing.Point(90, 14);
             this.Foto.Name = "Foto";
-            this.Foto.Size = new System.Drawing.Size(102, 94);
+            this.Foto.Size = new System.Drawing.Size(95, 83);
             this.Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Foto.TabIndex = 0;
             this.Foto.TabStop = false;
@@ -247,19 +285,20 @@
             this.PanelArriba.Location = new System.Drawing.Point(0, 0);
             this.PanelArriba.Name = "PanelArriba";
             this.PanelArriba.Quality = 10;
-            this.PanelArriba.Size = new System.Drawing.Size(1308, 41);
+            this.PanelArriba.Size = new System.Drawing.Size(1044, 41);
             this.PanelArriba.TabIndex = 0;
             this.PanelArriba.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelArriba_Paint);
             // 
             // btmMiz
             // 
             this.btmMiz.BackColor = System.Drawing.Color.White;
+            this.btmMiz.Dock = System.Windows.Forms.DockStyle.Right;
             this.btmMiz.FlatAppearance.BorderSize = 0;
             this.btmMiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btmMiz.Image = global::Jolugago_Project1.Properties.Resources._1303875_32;
-            this.btmMiz.Location = new System.Drawing.Point(1128, 0);
+            this.btmMiz.Location = new System.Drawing.Point(858, 0);
             this.btmMiz.Name = "btmMiz";
-            this.btmMiz.Size = new System.Drawing.Size(70, 38);
+            this.btmMiz.Size = new System.Drawing.Size(70, 41);
             this.btmMiz.TabIndex = 3;
             this.btmMiz.UseVisualStyleBackColor = false;
             this.btmMiz.Click += new System.EventHandler(this.btmMiz_Click);
@@ -267,12 +306,13 @@
             // btnMizT
             // 
             this.btnMizT.BackColor = System.Drawing.Color.White;
+            this.btnMizT.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnMizT.FlatAppearance.BorderSize = 0;
             this.btnMizT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMizT.Image = global::Jolugago_Project1.Properties.Resources._2123874_32;
-            this.btnMizT.Location = new System.Drawing.Point(1196, 2);
+            this.btnMizT.Location = new System.Drawing.Point(928, 0);
             this.btnMizT.Name = "btnMizT";
-            this.btnMizT.Size = new System.Drawing.Size(46, 35);
+            this.btnMizT.Size = new System.Drawing.Size(46, 41);
             this.btnMizT.TabIndex = 2;
             this.btnMizT.UseVisualStyleBackColor = false;
             this.btnMizT.Click += new System.EventHandler(this.btnMizT_Click);
@@ -280,12 +320,13 @@
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.Color.White;
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Image = global::Jolugago_Project1.Properties.Resources._743823_48;
-            this.btnClose.Location = new System.Drawing.Point(1236, 0);
+            this.btnClose.Location = new System.Drawing.Point(974, 0);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(70, 38);
+            this.btnClose.Size = new System.Drawing.Size(70, 41);
             this.btnClose.TabIndex = 1;
             this.btnClose.UseVisualStyleBackColor = false;
             // 
@@ -333,13 +374,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1308, 762);
+            this.ClientSize = new System.Drawing.Size(1044, 762);
             this.Controls.Add(this.PanelContainer);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Controls.Add(this.PanelVertical);
             this.Controls.Add(this.PanelArriba);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Panel_Principal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Panel_Principal";
             this.PanelVertical.ResumeLayout(false);
             this.panelFoto.ResumeLayout(false);
@@ -373,5 +415,7 @@
         private System.Windows.Forms.Button btnMizT;
         private System.Windows.Forms.Button btnGraficas;
         public Bunifu.Framework.UI.BunifuGradientPanel PanelContainer;
+        private System.Windows.Forms.Button btnProveedores;
+        private System.Windows.Forms.Button btnProductos;
     }
 }

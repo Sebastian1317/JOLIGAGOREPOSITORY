@@ -1,6 +1,6 @@
-﻿namespace Jolugago_Project1.Productos
+﻿namespace Jolugago_Project1.Extra
 {
-    partial class OperacionesProducto
+    partial class Extendido
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Extendido
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "OperacionesProducto";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Extendido";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Extendido";
+            this.Activated += new System.EventHandler(this.Extendido_Activated);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

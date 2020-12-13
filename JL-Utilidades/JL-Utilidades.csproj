@@ -62,6 +62,11 @@
     <Content Include="Imagenes\743823-48.png" />
     <Content Include="Imagenes\743823-64.png" />
     <Content Include="Imagenes\HamburguerLine.png" />
+    <Content Include="Imagenes\ProductosAdd.png" />
+    <Content Include="Imagenes\Proveedor.png" />
+    <Content Include="Imagenes\ProveedorDel.png" />
+    <Content Include="Imagenes\ProveedorDel1.png" />
+    <Content Include="Imagenes\ProveedorUpd.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -101,9 +101,11 @@ namespace JL_Capa_De_Negocio
 
         public void llenarProveedores(DataGridView datagridview) {
             try {
-                if (Utilidades.cargarGrid(iproveedor.obtenerProveedores(), datagridview) == null)
+                datagridview.Rows.Clear();
+                foreach (var item in iproveedor.obtenerProveedores())
                 {
-                    MessageBox.Show("No hay proveedores por mostrar");
+                    datagridview.Rows.Add(item.idProvee, item.nombre, item.direccion,
+                        item.telefono, item.rfc, item.correo);
                 }
             } catch (Exception ex) {
                 MessageBox.Show("+CN_Proveedor-llenarProveedores: " + ex.Message);
@@ -114,15 +116,35 @@ namespace JL_Capa_De_Negocio
 
             try
             {
-                Utilidades.cargarGrid(iproveedor.obtenerProveedorPor(datos, datos, datos), datagridview); 
+                datagridview.Rows.Clear();
+                foreach (var item in iproveedor.obtenerProveedorPor(datos, datos, datos))
+                {
+                    datagridview.Rows.Add(item.idProvee,item.nombre,item.direccion,
+                        item.telefono,item.rfc,item.correo);
+                }
+
+                //Utilidades.cargarGrid(iproveedor.obtenerProveedorPor(datos, datos, datos), datagridview); 
                 
             }
             catch (Exception ex)
             {
                 MessageBox.Show("+CN_Proveedor-llenarProveedores: " + ex.Message);
             }
+        }
+
+        public BD_Proveedor seleccionaProveedorProId(int id) {
+
+            try {
+                return iproveedor.buscarProveedorPorId(id);
+            } catch (Exception ex) {
+
+                MessageBox.Show("+CN_Proveedor-seleccionaProveedorProId: "+ex.Message);
+                return null;
+                
+            }
 
 
         }
+
     }
 }

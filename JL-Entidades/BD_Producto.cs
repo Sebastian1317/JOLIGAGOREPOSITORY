@@ -21,7 +21,7 @@ namespace JL_Entidades
         public decimal pre_vntaxMenor { get; set; }
         public decimal pre_vntaxMayor { get; set; }
         public decimal pre_Vntadolar { get; set; }
-        public char undMedida { get; set; }
+        public String undMedida { get; set; }
         public decimal pesoUnit { get; set; }
         public decimal utilidadUnit { get; set; }
         public String tipoProdcto { get; set; }
@@ -45,8 +45,8 @@ namespace JL_Entidades
 
         public BD_Producto(int id_Pro, BD_Proveedor idProvee, string descripcion_larga, 
             decimal frank, decimal pre_CompraS, decimal pre_CompraD, decimal stock_Actual, BD_Categoria id_Cat, 
-            BD_Marca id_Marca, string foto, decimal pre_vntaxMenor, decimal pre_vntaxMayor, decimal pre_Vntadolar, 
-            char undMedida, decimal pesoUnit, decimal utilidadUnit, string tipoProdcto, 
+            BD_Marca id_Marca, string foto, decimal pre_vntaxMenor, decimal pre_vntaxMayor, decimal pre_Vntadolar,
+            String undMedida, decimal pesoUnit, decimal utilidadUnit, string tipoProdcto, 
             decimal valor_porCant, string estado_Pro, string id_ProductoFact, string claveProducto)
         {
             Id_Pro = id_Pro;

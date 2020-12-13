@@ -12,6 +12,7 @@ namespace JL_Modelos.Interfaces
         bool insertarProveedor(BD_Proveedor usuario);
         bool eliminarProveedor(int? id_proveedor);
         bool actualizarProveedor(BD_Proveedor usuario);
+        BD_Proveedor buscarProveedorPorId(int idProvee);
         List<BD_Proveedor> obtenerProveedores();
         List<BD_Proveedor> obtenerProveedorPor(String nombre, String correo,String rfc);
         

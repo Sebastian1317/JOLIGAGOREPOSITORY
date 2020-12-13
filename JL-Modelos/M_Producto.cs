@@ -289,7 +289,7 @@ namespace JL_Modelos
                         producto.pre_vntaxMenor= decimal.Parse(reader["Pre_vntaxMenor"].ToString());
                         producto.pre_vntaxMayor=decimal.Parse( reader["Pre_vntaxMayor"].ToString());
                         producto.pre_Vntadolar=decimal.Parse(reader["Pre_Vntadolar"].ToString());
-                        producto.undMedida= char.Parse(reader["UndMedida"].ToString());
+                        producto.undMedida= reader["UndMedida"].ToString();
                         producto.pesoUnit= decimal.Parse(reader["PesoUnit"].ToString());
                         producto.utilidadUnit= decimal.Parse(reader["UtilidadUnit"].ToString());
                         producto.tipoProdcto= reader["TipoProdcto"].ToString();
@@ -331,25 +331,26 @@ namespace JL_Modelos
                 {
 
                     BD_Producto producto = null;
-
+                    BD_Proveedor proveedor = new BD_Proveedor();
+                    BD_Marca marca = new BD_Marca();
+                    BD_Categoria categoria = new BD_Categoria();
                     while (reader.Read())
                     {
                          producto = new BD_Producto();
+                        
 
-                        producto.idProvee.idProvee = int.Parse(reader["NOMBRE"].ToString());
+                        producto.Id_Pro = int.Parse(reader["Id_Pro"].ToString());
                         producto.descripcion_larga = reader["Descripcion_Larga"].ToString();
-                        producto.pre_CompraS = decimal.Parse(reader["Pre_CompraS"].ToString());
+                        proveedor.nombre = reader["nombreP"].ToString();
+                        producto.idProvee = proveedor;
                         producto.pre_CompraD = decimal.Parse(reader["Pre_Compra$"].ToString());
                         producto.stock_Actual = decimal.Parse(reader["Stock_Actual"].ToString());
-                        producto.id_Cat.Categoria = reader["Categoria"].ToString();
-                        producto.id_Marca.Marca = reader["Marca"].ToString();
-                        producto.pre_vntaxMenor = decimal.Parse(reader["Pre_vntaxMenor"].ToString());
-                        producto.pre_vntaxMayor = decimal.Parse(reader["Pre_vntaxMayor"].ToString());
-                        producto.undMedida = char.Parse(reader["UndMedida"].ToString());
+                        categoria.Categoria= reader["Categoria"].ToString();
+                        producto.id_Cat = categoria;
+                        marca.Marca = reader["Marca"].ToString();
+                        producto.id_Marca = marca;
+                        producto.undMedida = reader["UndMedida"].ToString();
                         producto.pesoUnit = decimal.Parse(reader["PesoUnit"].ToString());
-                        producto.tipoProdcto = reader["TipoProdcto"].ToString();
-                        producto.valor_porCant = decimal.Parse(reader["Valor_porCant"].ToString());
-                        producto.estado_Pro = reader["Estado_Pro"].ToString();
 
                         productos.Add(producto);
                     }
@@ -396,20 +397,15 @@ namespace JL_Modelos
                     {
                         producto = new BD_Producto();
 
-                        producto.idProvee.idProvee = int.Parse(reader["NOMBRE"].ToString());
+                        producto.Id_Pro = int.Parse(reader["Id_Pro"].ToString());
                         producto.descripcion_larga = reader["Descripcion_Larga"].ToString();
-                        producto.pre_CompraS = decimal.Parse(reader["Pre_CompraS"].ToString());
+                        producto.idProvee.nombre = reader["NOMBRE"].ToString();
                         producto.pre_CompraD = decimal.Parse(reader["Pre_Compra$"].ToString());
                         producto.stock_Actual = decimal.Parse(reader["Stock_Actual"].ToString());
                         producto.id_Cat.Categoria = reader["Categoria"].ToString();
                         producto.id_Marca.Marca = reader["Marca"].ToString();
-                        producto.pre_vntaxMenor = decimal.Parse(reader["Pre_vntaxMenor"].ToString());
-                        producto.pre_vntaxMayor = decimal.Parse(reader["Pre_vntaxMayor"].ToString());
-                        producto.undMedida = char.Parse(reader["UndMedida"].ToString());
+                        producto.undMedida = reader["UndMedida"].ToString();
                         producto.pesoUnit = decimal.Parse(reader["PesoUnit"].ToString());
-                        producto.tipoProdcto = reader["TipoProdcto"].ToString();
-                        producto.valor_porCant = decimal.Parse(reader["Valor_porCant"].ToString());
-                        producto.estado_Pro = reader["Estado_Pro"].ToString();
 
                         productos.Add(producto);
                     }

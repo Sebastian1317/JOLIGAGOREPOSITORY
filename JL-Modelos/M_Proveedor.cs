@@ -30,7 +30,7 @@ namespace JL_Modelos
                 SqlCommand command = new SqlCommand("actualizarProveedor", cnn);
                 command.CommandType = CommandType.StoredProcedure;
 
-                command.Parameters.AddWithValue("@IDPROVEE", usuario.nombre);
+                command.Parameters.AddWithValue("@IDPROVEE", usuario.idProvee);
                 command.Parameters.AddWithValue("@NOMBRE", usuario.nombre);
                 command.Parameters.AddWithValue("@DIRECCION", usuario.direccion);
                 command.Parameters.AddWithValue("@TELEFONO", usuario.telefono);
@@ -55,6 +55,57 @@ namespace JL_Modelos
 
                 cnn.Close();
                 throw new Exception("M_Proveedor-actualizarProveedor: " + ex.Message);
+            }
+        }
+
+        public BD_Proveedor buscarProveedorPorId(int idProvee)
+        {
+            BD_Proveedor proveedor = null;
+            try
+            {
+                cnn.Open();
+                SqlCommand command = new SqlCommand("seleccionarProveedorPorId", cnn);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@IDPROVEE", idProvee);
+
+                SqlDataReader reader = command.ExecuteReader();
+                
+                if (reader.HasRows)
+                {
+
+                    proveedor = new BD_Proveedor();
+
+                    while (reader.Read())
+                    {
+                       
+                        proveedor.idProvee = int.Parse(reader["IDPROVEE"].ToString());
+                        proveedor.nombre = reader["NOMBRE"].ToString();
+                        proveedor.direccion = reader["DIRECCION"].ToString();
+                        proveedor.telefono = reader["TELEFONO"].ToString();
+                        proveedor.rfc = reader["RFC"].ToString();
+                        proveedor.correo = reader["CORREO"].ToString();
+                        proveedor.rubro = reader["RUBRO"].ToString();
+                        proveedor.contacto = reader["CONTACTO"].ToString();
+                        proveedor.foto_logo = reader["FOTO_LOGO"].ToString();
+                        proveedor.estado_provdr = reader["ESTADO_PROVDR"].ToString();
+                    }
+                    cnn.Close();
+                    return proveedor;
+
+                }
+                else
+                {
+
+                    return null;
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                cnn.Close();
+                proveedor = null;
+                throw new Exception("CN_Proveedor-buscarProveedorPorId+ " + ex.Message);
             }
         }
 
@@ -145,7 +196,6 @@ namespace JL_Modelos
                         proveedor.telefono = reader["TELEFONO"].ToString();
                         proveedor.rfc = reader["RFC"].ToString();
                         proveedor.correo = reader["CORREO"].ToString();
-                        proveedor.contacto = reader["CONTACTO"].ToString();
 
                         proveedores.Add(proveedor);
                     }
@@ -189,15 +239,13 @@ namespace JL_Modelos
                     BD_Proveedor proveedor = new BD_Proveedor();
                     while (reader.Read())
                     {
-                       
                         proveedor.idProvee = int.Parse(reader["IDPROVEE"].ToString());
                         proveedor.nombre = reader["NOMBRE"].ToString();
                         proveedor.direccion = reader["DIRECCION"].ToString();
                         proveedor.telefono = reader["TELEFONO"].ToString();
                         proveedor.rfc = reader["RFC"].ToString();
                         proveedor.correo = reader["CORREO"].ToString();
-                        proveedor.contacto = reader["CONTACTO"].ToString();
-
+                      
                         proveedores.Add(proveedor);
                         proveedor = new BD_Proveedor();
                     }

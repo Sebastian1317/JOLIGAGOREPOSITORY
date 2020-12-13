@@ -1,6 +1,7 @@
 ﻿using JL_Utilidades;
 using Jolugago_Project1.Compras;
 using Jolugago_Project1.MenusBarras;
+using Jolugago_Project1.Proveedor;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,7 +19,10 @@ namespace Jolugago_Project1
         public Panel_Principal()
         {
             InitializeComponent();
-            panelCargar = PanelContainer; 
+            panelCargar = PanelContainer;
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
+
         }
 
 
@@ -42,6 +46,7 @@ namespace Jolugago_Project1
                 PanelLogoArriba.Size = new Size(70, 41);
                 lblPerfil.Visible = false;
                 lblRol.Visible = false;
+                
             }
             else
             {
@@ -52,6 +57,7 @@ namespace Jolugago_Project1
                 lblPerfil.Visible = true;
                 lblRol.Visible = true;
                 PanelLogoArriba.Size = new Size(270, 41);
+                
             }
 
         }
@@ -77,9 +83,9 @@ namespace Jolugago_Project1
                 //Codigo para restaurar
                 this.Size= new Size(1308, 762);
                 formularioR.Size = this.PanelContainer.Size;
-                btnClose.Location = new Point(this.PanelArriba.Size.Width - 72, 0);
-                btnMizT.Location = new Point(this.PanelArriba.Size.Width - 112, 0);
-                btmMiz.Location = new Point(this.PanelArriba.Size.Width - 180, 0);
+                //btnClose.Location = new Point(this.PanelArriba.Size.Width - 72, 0);
+                //btnMizT.Location = new Point(this.PanelArriba.Size.Width - 112, 0);
+                //btmMiz.Location = new Point(this.PanelArriba.Size.Width - 180, 0);
 
             }
             else {
@@ -87,9 +93,9 @@ namespace Jolugago_Project1
                 this.Size = Screen.PrimaryScreen.WorkingArea.Size;
                 this.Location = Screen.PrimaryScreen.WorkingArea.Location;
                 formularioR.Size= this.PanelContainer.Size;
-                btnClose.Location = new Point(this.PanelArriba.Size.Width - 72, 0);
-                btnMizT.Location = new Point(this.PanelArriba.Size.Width - 112, 0);
-                btmMiz.Location = new Point(this.PanelArriba.Size.Width - 180, 0);
+                //btnClose.Location = new Point(this.PanelArriba.Size.Width - 72, 0);
+                //btnMizT.Location = new Point(this.PanelArriba.Size.Width - 112, 0);
+                //btmMiz.Location = new Point(this.PanelArriba.Size.Width - 180, 0);
             }
         }
 
@@ -102,6 +108,7 @@ namespace Jolugago_Project1
         {
             BarrasMenus b = new BarrasMenus();
             EscogerMenu(b);
+            
         }
 
         public void EscogerMenu(Form formulario) {
@@ -110,5 +117,17 @@ namespace Jolugago_Project1
             formularioR.Size = this.PanelContainer.Size;
         }
 
+        private void btnProveedores_Click(object sender, EventArgs e)
+        {
+
+            Proveedor.Proveedor proveedor = new Proveedor.Proveedor();
+            EscogerMenu(proveedor);
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            Productos.ListarProductos productos = new Productos.ListarProductos();
+            EscogerMenu(productos);
+        }
     }
 }

@@ -30,8 +30,7 @@ namespace Jolugago_Project1.Compras
             cncompras.listarCompras(dgvCompras);
 
         }
-
-
+        
         private void dgvCompras_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -42,6 +41,7 @@ namespace Jolugago_Project1.Compras
             GenerarCompra g = new GenerarCompra();
 
             MostrarFormularios.MostrarFormulario(Panel_Principal.panelCargar, g);
+            
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using JL_Capa_De_Negocio;
+using JL_Entidades;
+using JL_Utilidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +19,7 @@ namespace Jolugago_Project1.Proveedor
         {
             InitializeComponent();
 
-            CargarDatos(dwProveedores);
+            CargarDatos(dgvProveedores);
         }
 
         private CN_Proveedor cnproveedor = null;
@@ -30,9 +32,9 @@ namespace Jolugago_Project1.Proveedor
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            InsertarProveedor insertar = new InsertarProveedor();
+            //AgregarProvedores insertar = new AgregarProvedores();
 
-            insertar.ShowDialog();
+            //insertar.ShowDialog();
         }
 
         private void bunifuTextbox1_OnTextChange(object sender, EventArgs e)
@@ -40,11 +42,45 @@ namespace Jolugago_Project1.Proveedor
             if (bunifuTextbox1.text != "")
             {
                 cnproveedor = new CN_Proveedor();
-                cnproveedor.llenarProveedoresPor(this.dwProveedores, bunifuTextbox1.text);
+                cnproveedor.llenarProveedoresPor(this.dgvProveedores, bunifuTextbox1.text);
             }
             else {
-                cnproveedor.llenarProveedores(this.dwProveedores);
+                cnproveedor.llenarProveedores(this.dgvProveedores);
             }
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            //Aqui guarda los datos
+            //Extra.Extendido ex = new Extra.Extendido();
+            //ex.Show();
+
+
+            AgregarProvedores insertarProveedor = new AgregarProvedores();
+            
+            MostrarFormularios.MostrarFormulario(Panel_Principal.panelCargar,insertarProveedor);
+
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+
+           int id_proveedor = int.Parse(dgvProveedores.SelectedRows[0].Cells[0].Value.ToString());
+            if (id_proveedor > 0) {
+
+                
+                cnproveedor = new CN_Proveedor();
+
+                BD_Proveedor proveedor = cnproveedor.seleccionaProveedorProId(id_proveedor);
+
+                AgregarProvedores insertarProveedor = new AgregarProvedores(proveedor);
+
+                MostrarFormularios.MostrarFormulario(Panel_Principal.panelCargar, insertarProveedor);
+
+            }
+        }
+
+        
+
     }
 }

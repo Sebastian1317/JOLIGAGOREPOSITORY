@@ -29,7 +29,8 @@ namespace JL_Utilidades
             
             formulario.TopLevel = false;
             panel.Controls.Add(formulario);
-            panel.Tag = formulario;            
+            panel.Tag = formulario; 
+            
             formulario.Show();
 
             return formulario;

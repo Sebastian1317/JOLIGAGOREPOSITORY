@@ -55,5 +55,45 @@ namespace JL_Utilidades
             }
         }
 
+        public static String urlArchvio()
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "c:\\";
+                //openFileDialog.Filter = "*.png|*.jpg|*.jpeg|*.gif";
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    return openFileDialog.FileName;
+
+                }
+                else {
+
+                    return "";
+                }
+
+            }
+
+    }
+        public static String urlCarpetas()
+        {
+            using (var fd = new FolderBrowserDialog())
+            {
+
+                if (fd.ShowDialog() == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(fd.SelectedPath))
+                {
+                    return fd.SelectedPath;
+                }
+                else
+                {
+
+                    return "";
+                }
+            }
+
+        }
+
     }
 }

@@ -83,13 +83,19 @@ namespace JL_Capa_De_Negocio
         }
         public void obtenerProductos(DataGridView dataGridView) {
 
-            try {
-
-                Utilidades.cargarGrid(iproducto.obtenerProductos(),dataGridView);
-
-            } catch (Exception ex) {
-
-                MessageBox.Show("+CN_Producto:obtenerProductos: "+ex.Message);
+            try
+            {
+                dataGridView.Rows.Clear();
+                foreach (var item in iproducto.obtenerProductos())
+                {
+                    dataGridView.Rows.Add(item.Id_Pro,item.descripcion_larga,item.idProvee.nombre,
+                        item.pre_CompraD,item.stock_Actual,item.id_Cat.Categoria,item.id_Marca.Marca,
+                        item.undMedida,item.pesoUnit);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("+CN_Producto-obtenerProductos: " + ex.Message);
             }
         }
         public void obtenerProductosPor(String descripcion_l, String proveedor,DataGridView dataGridView) {

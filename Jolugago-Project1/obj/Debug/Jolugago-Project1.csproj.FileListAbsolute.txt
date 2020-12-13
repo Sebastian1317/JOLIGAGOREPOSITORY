@@ -34,7 +34,6 @@ C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago-Project1.csproj.CopyComplete
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago-Project1.exe
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago-Project1.pdb
-C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Proveedor.InsertarProveedor.resources
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Proveedor.Proveedor.resources
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\JL-Capa_De_Negocio.dll
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\bin\Debug\JL-Entidades.dll
@@ -51,3 +50,6 @@ C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Panel_Principal.resources
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.MenusBarras.BarrasMenus.resources
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Compras.GenerarCompra.resources
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Proveedor.AgregarProvedores.resources
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Extra.Extendido.resources
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Productos.ListarProductos.resources

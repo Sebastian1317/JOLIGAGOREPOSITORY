@@ -24,7 +24,6 @@ namespace Jolugago_Project1.Productos
 
         private void cargarComboBox()
         {
-            
             cn_producto.listarMarca(ddlMarca1);
             cn_producto.listarCategoria(ddlCategoria);
             cn_producto.listarProveedores(ddlProveedor);
@@ -32,6 +31,9 @@ namespace Jolugago_Project1.Productos
             
         }
 
+        private void bunifuCards1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }
