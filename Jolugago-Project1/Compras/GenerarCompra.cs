@@ -20,6 +20,7 @@ namespace Jolugago_Project1.Compras
         {
             InitializeComponent();
             //codigo_de_prueba();
+
         }
 
         private BD_DocumentoCompras compra = null;
@@ -44,7 +45,10 @@ namespace Jolugago_Project1.Compras
 
 
         }
-       
 
+        private void dgvBuscadorPro_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -278,10 +278,10 @@
             this.PanelArriba.Controls.Add(this.btnMin);
             this.PanelArriba.Controls.Add(this.PanelLogoArriba);
             this.PanelArriba.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelArriba.GradientBottomLeft = System.Drawing.Color.White;
-            this.PanelArriba.GradientBottomRight = System.Drawing.Color.White;
-            this.PanelArriba.GradientTopLeft = System.Drawing.Color.White;
-            this.PanelArriba.GradientTopRight = System.Drawing.Color.White;
+            this.PanelArriba.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(113)))), ((int)(((byte)(150)))));
+            this.PanelArriba.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(113)))), ((int)(((byte)(150)))));
+            this.PanelArriba.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(113)))), ((int)(((byte)(150)))));
+            this.PanelArriba.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(113)))), ((int)(((byte)(150)))));
             this.PanelArriba.Location = new System.Drawing.Point(0, 0);
             this.PanelArriba.Name = "PanelArriba";
             this.PanelArriba.Quality = 10;
