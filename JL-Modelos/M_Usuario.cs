@@ -28,7 +28,7 @@ namespace JL_Modelos
             try
             {
                 cnn.Open();
-                SqlCommand command = new SqlCommand("insertarLogin", cnn);
+                SqlCommand command = new SqlCommand("ingresarLogin", cnn);
                 command.CommandType = CommandType.StoredProcedure;
 
                 command.Parameters.AddWithValue("@correo", correo);
@@ -36,11 +36,16 @@ namespace JL_Modelos
 
                 SqlDataReader reader = command.ExecuteReader();
 
+                BD_Rol roles = new BD_Rol();
 
                 while (reader.Read())
                 {
-
-                    usuarioB.nombres = (String)reader["Nombres"];
+                    usuarioB.id_Usu= int.Parse(reader["Id_Usu"].ToString());
+                    usuarioB.nombres = reader["Nombre"].ToString();
+                    roles.Id_Rol = int.Parse(reader["Id_Rol"].ToString());
+                    roles.Rol = reader["Rol"].ToString();
+                    usuarioB.id_Rol = roles;
+                    usuarioB.ubicacion_Foto = (String)reader["Ubicacion_Foto"];
 
                 }
 

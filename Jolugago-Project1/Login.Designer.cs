@@ -33,14 +33,15 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelPos = new System.Windows.Forms.Panel();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.txtNombre = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtContraseña = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.lblNombre = new System.Windows.Forms.Label();
+            this.btnIngresar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lblContraseña = new System.Windows.Forms.Label();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.txtContraseña = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtNombre = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.lblBienvendio = new System.Windows.Forms.Label();
+            this.lblOlvideC = new System.Windows.Forms.LinkLabel();
+            this.plLine = new System.Windows.Forms.Panel();
+            this.tEntrar = new System.Windows.Forms.Timer(this.components);
             this.panelPos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,18 +52,20 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(185)))), ((int)(((byte)(239)))));
-            this.panel1.Controls.Add(this.bunifuMaterialTextbox1);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(52)))), ((int)(((byte)(106)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(498, 450);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panelPos
             // 
-            this.panelPos.Controls.Add(this.label1);
-            this.panelPos.Controls.Add(this.bunifuThinButton21);
+            this.panelPos.Controls.Add(this.plLine);
+            this.panelPos.Controls.Add(this.lblOlvideC);
+            this.panelPos.Controls.Add(this.lblBienvendio);
+            this.panelPos.Controls.Add(this.btnIngresar);
             this.panelPos.Controls.Add(this.lblContraseña);
             this.panelPos.Controls.Add(this.lblNombre);
             this.panelPos.Controls.Add(this.txtContraseña);
@@ -73,75 +76,31 @@
             this.panelPos.Size = new System.Drawing.Size(303, 450);
             this.panelPos.TabIndex = 1;
             // 
-            // bunifuMaterialTextbox1
+            // btnIngresar
             // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(548, 169);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(188, 33);
-            this.bunifuMaterialTextbox1.TabIndex = 0;
-            this.bunifuMaterialTextbox1.Text = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtNombre.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNombre.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtNombre.BorderThickness = 3;
-            this.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNombre.isPassword = false;
-            this.txtNombre.Location = new System.Drawing.Point(3, 184);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(276, 35);
-            this.txtNombre.TabIndex = 0;
-            this.txtNombre.Text = "bunifuMetroTextbox1";
-            this.txtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtContraseña
-            // 
-            this.txtContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtContraseña.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtContraseña.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtContraseña.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtContraseña.BorderThickness = 3;
-            this.txtContraseña.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtContraseña.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtContraseña.isPassword = false;
-            this.txtContraseña.Location = new System.Drawing.Point(4, 276);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
-            this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(276, 39);
-            this.txtContraseña.TabIndex = 1;
-            this.txtContraseña.Text = "bunifuMetroTextbox2";
-            this.txtContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblNombre.Location = new System.Drawing.Point(7, 156);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(84, 24);
-            this.lblNombre.TabIndex = 2;
-            this.lblNombre.Text = "Nombre:";
+            this.btnIngresar.ActiveBorderThickness = 1;
+            this.btnIngresar.ActiveCornerRadius = 20;
+            this.btnIngresar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnIngresar.ActiveForecolor = System.Drawing.Color.White;
+            this.btnIngresar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnIngresar.BackColor = System.Drawing.Color.White;
+            this.btnIngresar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIngresar.BackgroundImage")));
+            this.btnIngresar.ButtonText = "Ingresar";
+            this.btnIngresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIngresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnIngresar.IdleBorderThickness = 1;
+            this.btnIngresar.IdleCornerRadius = 20;
+            this.btnIngresar.IdleFillColor = System.Drawing.Color.White;
+            this.btnIngresar.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnIngresar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnIngresar.Location = new System.Drawing.Point(51, 395);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(5);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(181, 41);
+            this.btnIngresar.TabIndex = 4;
+            this.btnIngresar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // lblContraseña
             // 
@@ -153,40 +112,86 @@
             this.lblContraseña.TabIndex = 3;
             this.lblContraseña.Text = "Contraseña:";
             // 
-            // bunifuThinButton21
+            // lblNombre
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Ingresar";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(51, 359);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
-            this.bunifuThinButton21.TabIndex = 4;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lblNombre.Location = new System.Drawing.Point(7, 156);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(84, 24);
+            this.lblNombre.TabIndex = 2;
+            this.lblNombre.Text = "Nombre:";
             // 
-            // label1
+            // txtContraseña
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(68, 321);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 20);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Olvide la contraseña";
+            this.txtContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtContraseña.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(189)))), ((int)(((byte)(255)))));
+            this.txtContraseña.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(212)))), ((int)(((byte)(218)))));
+            this.txtContraseña.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(189)))), ((int)(((byte)(255)))));
+            this.txtContraseña.BorderThickness = 3;
+            this.txtContraseña.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtContraseña.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtContraseña.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtContraseña.isPassword = false;
+            this.txtContraseña.Location = new System.Drawing.Point(4, 276);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(276, 39);
+            this.txtContraseña.TabIndex = 1;
+            this.txtContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNombre.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(189)))), ((int)(((byte)(255)))));
+            this.txtNombre.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(212)))), ((int)(((byte)(218)))));
+            this.txtNombre.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(189)))), ((int)(((byte)(255)))));
+            this.txtNombre.BorderThickness = 3;
+            this.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNombre.isPassword = false;
+            this.txtNombre.Location = new System.Drawing.Point(3, 184);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(276, 39);
+            this.txtNombre.TabIndex = 0;
+            this.txtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // lblBienvendio
+            // 
+            this.lblBienvendio.AutoSize = true;
+            this.lblBienvendio.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold);
+            this.lblBienvendio.Location = new System.Drawing.Point(88, 26);
+            this.lblBienvendio.Name = "lblBienvendio";
+            this.lblBienvendio.Size = new System.Drawing.Size(197, 39);
+            this.lblBienvendio.TabIndex = 6;
+            this.lblBienvendio.Text = "Bienvenido";
+            // 
+            // lblOlvideC
+            // 
+            this.lblOlvideC.AutoSize = true;
+            this.lblOlvideC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblOlvideC.Location = new System.Drawing.Point(67, 337);
+            this.lblOlvideC.Name = "lblOlvideC";
+            this.lblOlvideC.Size = new System.Drawing.Size(155, 20);
+            this.lblOlvideC.TabIndex = 7;
+            this.lblOlvideC.TabStop = true;
+            this.lblOlvideC.Text = "Olvide la Contraseña";
+            // 
+            // plLine
+            // 
+            this.plLine.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("plLine.BackgroundImage")));
+            this.plLine.Location = new System.Drawing.Point(22, 92);
+            this.plLine.Name = "plLine";
+            this.plLine.Size = new System.Drawing.Size(254, 35);
+            this.plLine.TabIndex = 9;
+            // 
+            // tEntrar
+            // 
+            this.tEntrar.Tick += new System.EventHandler(this.tEntrar_Tick);
             // 
             // Login
             // 
@@ -200,7 +205,6 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
             this.panelPos.ResumeLayout(false);
             this.panelPos.PerformLayout();
             this.ResumeLayout(false);
@@ -211,14 +215,16 @@
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
         private System.Windows.Forms.Panel panelPos;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtContraseña;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtNombre;
         private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.Label lblNombre;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
-        private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnIngresar;
+        private System.Windows.Forms.LinkLabel lblOlvideC;
+        private System.Windows.Forms.Label lblBienvendio;
+        private System.Windows.Forms.Panel plLine;
+        private System.Windows.Forms.Timer tEntrar;
     }
 }
 

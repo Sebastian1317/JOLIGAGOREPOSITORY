@@ -1,4 +1,5 @@
-﻿using JL_Utilidades;
+﻿using JL_Entidades;
+using JL_Utilidades;
 using Jolugago_Project1.Compras;
 using Jolugago_Project1.MenusBarras;
 using Jolugago_Project1.Proveedor;
@@ -16,6 +17,8 @@ namespace Jolugago_Project1
 {
     public partial class Panel_Principal : Form
     {
+        //private BD_Usuario usuario;
+
         public Panel_Principal()
         {
             InitializeComponent();
@@ -23,6 +26,21 @@ namespace Jolugago_Project1
             this.Size = Screen.PrimaryScreen.WorkingArea.Size;
             this.Location = Screen.PrimaryScreen.WorkingArea.Location;
 
+        }
+
+        public Panel_Principal(BD_Usuario _usuario) {
+            InitializeComponent();
+            lblPerfil.Text = _usuario.nombres;
+            //lblRol.Text = _usuario.id_Rol;
+            if (_usuario.ubicacion_Foto != null)
+            {
+                Foto.Image = new System.Drawing.Bitmap(_usuario.ubicacion_Foto);
+                Foto.SizeMode = PictureBoxSizeMode.Zoom;
+                
+            }
+            panelCargar = PanelContainer;
+            this.Size = Screen.PrimaryScreen.WorkingArea.Size;
+            this.Location = Screen.PrimaryScreen.WorkingArea.Location;
         }
 
 

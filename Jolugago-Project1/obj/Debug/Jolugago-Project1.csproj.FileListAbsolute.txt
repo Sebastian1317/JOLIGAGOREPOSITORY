@@ -53,3 +53,5 @@ C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Proveedor.AgregarProvedores.resources
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Extra.Extendido.resources
 C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Productos.ListarProductos.resources
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Extra.LoginCargar.resources
+C:\Users\Antonio\Source\Repos\Sebastian1317\JOLIGAGOREPOSITORY2\Jolugago-Project1\obj\Debug\Jolugago_Project1.Extra.Errores.resources

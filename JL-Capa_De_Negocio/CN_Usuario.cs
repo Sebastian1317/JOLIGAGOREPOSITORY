@@ -17,10 +17,8 @@ namespace JL_Capa_De_Negocio
        private M_IUsuario iusuario = new M_Usuario();
 
         public BD_Usuario accesarLoginC(String correo,String contraseña) {
-
-
-
-            BD_Usuario usuarioC = new BD_Usuario();
+            
+            BD_Usuario usuarioC = null;
 
             try {
 
@@ -28,17 +26,19 @@ namespace JL_Capa_De_Negocio
 
                     usuarioC = iusuario.accesarLogin(correo: correo, contraseña: contraseña);
 
-                    if (usuarioC == null)
+                    if (usuarioC.id_Usu == 0)
                     {
 
-                        usuarioC = null;
+                        return usuarioC=null;
                     }
                     else {
 
-                        usuarioC = null;
+                        return usuarioC;
                     }
+                    
                 }
-                return usuarioC;
+                return usuarioC=null;
+
             }
             catch (Exception ex) {
 
