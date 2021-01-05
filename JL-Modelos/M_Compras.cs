@@ -26,6 +26,56 @@ namespace JL_Modelos
             throw new NotImplementedException();
         }
 
+        public List<BD_Producto> getProductosLike(string productoD)
+        {
+            List<BD_Producto> productos = new List<BD_Producto>();
+            try
+            {
+                cnn.Open();
+                SqlCommand command = new SqlCommand("listarProductosIngresos", cnn);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@descripicion", productoD);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+
+                    BD_Producto producto = null;
+                    BD_Proveedor proveedor = null;
+                    BD_Marca marca = null;
+                    while (reader.Read())
+                    {
+                        producto = new BD_Producto();
+                        marca = new BD_Marca();
+                        proveedor = new BD_Proveedor();
+
+                        producto.Id_Pro = int.Parse(reader["Id_Pro"].ToString());
+                        producto.descripcion_larga = reader["Descripcion_Larga"].ToString();
+                        marca.Marca = reader["Marca"].ToString();
+                        producto.id_Marca = marca;
+                        proveedor.nombre = reader["Proveedor"].ToString();
+                        producto.idProvee = proveedor;
+                        
+                        productos.Add(producto);
+                    }
+                    cnn.Close();
+                    return productos;
+
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                cnn.Close();
+                productos = null;
+                throw new Exception("M_Compras-getProductosLike+ " + ex.Message);
+            }
+        }
+
         public bool insertarCompra(BD_DocumentoCompras compras)
         {
             try

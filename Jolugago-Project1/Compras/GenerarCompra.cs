@@ -20,7 +20,7 @@ namespace Jolugago_Project1.Compras
         {
             InitializeComponent();
             //codigo_de_prueba();
-
+            dgvBuscadorPro.Visible = false;
         }
 
         private BD_DocumentoCompras compra = null;
@@ -49,6 +49,22 @@ namespace Jolugago_Project1.Compras
         private void dgvBuscadorPro_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnBuscadorProd_OnTextChange(object sender, EventArgs e)
+        {
+            if (btnBuscadorProd.text != "")
+            {
+                cncompras = new CN_Compras();
+
+                cncompras.buscarProductosLike(dgvBuscadorPro,btnBuscadorProd.text);
+
+                if (dgvBuscadorPro.ColumnCount > 0) {
+                    dgvBuscadorPro.Visible = true;
+                }
+            }
+
+            
         }
     }
 }

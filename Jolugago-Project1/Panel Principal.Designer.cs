@@ -39,6 +39,7 @@
             this.btnProveedores = new System.Windows.Forms.Button();
             this.btnGraficas = new System.Windows.Forms.Button();
             this.panelFoto = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.Foto = new System.Windows.Forms.PictureBox();
             this.lblRol = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnEditarP = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lblPerfil = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -50,13 +51,12 @@
             this.btnMin = new System.Windows.Forms.Button();
             this.PanelLogoArriba = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.Foto = new System.Windows.Forms.PictureBox();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.PanelVertical.SuspendLayout();
             this.panelFoto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Foto)).BeginInit();
             this.PanelArriba.SuspendLayout();
             this.PanelLogoArriba.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Foto)).BeginInit();
             this.SuspendLayout();
             // 
             // Formulario
@@ -189,6 +189,18 @@
             this.panelFoto.Quality = 10;
             this.panelFoto.Size = new System.Drawing.Size(270, 203);
             this.panelFoto.TabIndex = 0;
+            // 
+            // Foto
+            // 
+            this.Foto.BackColor = System.Drawing.Color.Transparent;
+            this.Foto.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Foto.ErrorImage")));
+            this.Foto.Image = ((System.Drawing.Image)(resources.GetObject("Foto.Image")));
+            this.Foto.Location = new System.Drawing.Point(86, 19);
+            this.Foto.Name = "Foto";
+            this.Foto.Size = new System.Drawing.Size(105, 84);
+            this.Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Foto.TabIndex = 6;
+            this.Foto.TabStop = false;
             // 
             // lblRol
             // 
@@ -358,18 +370,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "JOLUGAGO";
             // 
-            // Foto
-            // 
-            this.Foto.BackColor = System.Drawing.Color.Transparent;
-            this.Foto.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Foto.ErrorImage")));
-            this.Foto.Image = ((System.Drawing.Image)(resources.GetObject("Foto.Image")));
-            this.Foto.Location = new System.Drawing.Point(86, 19);
-            this.Foto.Name = "Foto";
-            this.Foto.Size = new System.Drawing.Size(105, 84);
-            this.Foto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Foto.TabIndex = 6;
-            this.Foto.TabStop = false;
-            // 
             // bunifuElipse2
             // 
             this.bunifuElipse2.ElipseRadius = 2;
@@ -391,10 +391,10 @@
             this.PanelVertical.ResumeLayout(false);
             this.panelFoto.ResumeLayout(false);
             this.panelFoto.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Foto)).EndInit();
             this.PanelArriba.ResumeLayout(false);
             this.PanelLogoArriba.ResumeLayout(false);
             this.PanelLogoArriba.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Foto)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -1,5 +1,6 @@
 ﻿using JL_Capa_De_Negocio;
 using JL_Entidades;
+using JL_Utilidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -59,7 +60,7 @@ namespace Jolugago_Project1
             if (txtNombre.Text != "" && txtContraseña.Text !="")
             {
                 cnusuario = new CN_Usuario();
-                usuario = cnusuario.accesarLoginC(txtNombre.Text, txtContraseña.Text);
+                usuario = cnusuario.accesarLoginC(txtNombre.Text, Sha1.Encrypt(txtContraseña.Text,true));
                 Extra.LoginCargar cargarL = new Extra.LoginCargar(usuario);
                 cargarL.ShowDialog();
                 if (usuario != null)

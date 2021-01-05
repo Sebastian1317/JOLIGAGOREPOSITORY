@@ -75,5 +75,27 @@ namespace JL_Capa_De_Negocio
                 MessageBox.Show("+CN_Compras-listarCompras: "+ex.Message);
             }
         }
+
+        public void buscarProductosLike(DataGridView dataGridView, String buscador)
+        {
+            try
+            {
+                List<BD_Producto>productos = icompra.getProductosLike(buscador);
+                if (productos !=null ) {
+                    foreach (var item in productos)
+                    {
+                        dataGridView.Rows.Add(item.descripcion_larga.ToString(),
+                               item.id_Marca.Marca);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("+CN_Compras-listarCompras: " + ex.Message);
+            }
+
+        }
+
     }
 }

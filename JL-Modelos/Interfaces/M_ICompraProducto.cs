@@ -13,5 +13,8 @@ namespace JL_Modelos.Interfaces
         bool devolucionCompra(int id_Compra);
         String obtnerIDCompra(int idTipoDoc);
         List<BD_DocumentoCompras> listarCompras();
+        List<BD_Producto> getProductosLike(String producto);
+
+
     }
 }

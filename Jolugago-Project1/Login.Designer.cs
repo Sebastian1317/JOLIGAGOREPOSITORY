@@ -33,14 +33,14 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelPos = new System.Windows.Forms.Panel();
+            this.plLine = new System.Windows.Forms.Panel();
+            this.lblOlvideC = new System.Windows.Forms.LinkLabel();
+            this.lblBienvendio = new System.Windows.Forms.Label();
             this.btnIngresar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtContraseña = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtNombre = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.lblBienvendio = new System.Windows.Forms.Label();
-            this.lblOlvideC = new System.Windows.Forms.LinkLabel();
-            this.plLine = new System.Windows.Forms.Panel();
             this.tEntrar = new System.Windows.Forms.Timer(this.components);
             this.panelPos.SuspendLayout();
             this.SuspendLayout();
@@ -76,24 +76,53 @@
             this.panelPos.Size = new System.Drawing.Size(303, 450);
             this.panelPos.TabIndex = 1;
             // 
+            // plLine
+            // 
+            this.plLine.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("plLine.BackgroundImage")));
+            this.plLine.Location = new System.Drawing.Point(22, 92);
+            this.plLine.Name = "plLine";
+            this.plLine.Size = new System.Drawing.Size(254, 35);
+            this.plLine.TabIndex = 9;
+            // 
+            // lblOlvideC
+            // 
+            this.lblOlvideC.AutoSize = true;
+            this.lblOlvideC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblOlvideC.Location = new System.Drawing.Point(67, 337);
+            this.lblOlvideC.Name = "lblOlvideC";
+            this.lblOlvideC.Size = new System.Drawing.Size(155, 20);
+            this.lblOlvideC.TabIndex = 7;
+            this.lblOlvideC.TabStop = true;
+            this.lblOlvideC.Text = "Olvide la Contraseña";
+            // 
+            // lblBienvendio
+            // 
+            this.lblBienvendio.AutoSize = true;
+            this.lblBienvendio.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold);
+            this.lblBienvendio.Location = new System.Drawing.Point(88, 26);
+            this.lblBienvendio.Name = "lblBienvendio";
+            this.lblBienvendio.Size = new System.Drawing.Size(197, 39);
+            this.lblBienvendio.TabIndex = 6;
+            this.lblBienvendio.Text = "Bienvenido";
+            // 
             // btnIngresar
             // 
             this.btnIngresar.ActiveBorderThickness = 1;
             this.btnIngresar.ActiveCornerRadius = 20;
-            this.btnIngresar.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnIngresar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(239)))));
             this.btnIngresar.ActiveForecolor = System.Drawing.Color.White;
-            this.btnIngresar.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnIngresar.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(239)))));
             this.btnIngresar.BackColor = System.Drawing.Color.White;
             this.btnIngresar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIngresar.BackgroundImage")));
             this.btnIngresar.ButtonText = "Ingresar";
             this.btnIngresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIngresar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnIngresar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(239)))));
             this.btnIngresar.IdleBorderThickness = 1;
             this.btnIngresar.IdleCornerRadius = 20;
             this.btnIngresar.IdleFillColor = System.Drawing.Color.White;
-            this.btnIngresar.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnIngresar.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnIngresar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(239)))));
+            this.btnIngresar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(48)))), ((int)(((byte)(239)))));
             this.btnIngresar.Location = new System.Drawing.Point(51, 395);
             this.btnIngresar.Margin = new System.Windows.Forms.Padding(5);
             this.btnIngresar.Name = "btnIngresar";
@@ -159,35 +188,6 @@
             this.txtNombre.Size = new System.Drawing.Size(276, 39);
             this.txtNombre.TabIndex = 0;
             this.txtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // lblBienvendio
-            // 
-            this.lblBienvendio.AutoSize = true;
-            this.lblBienvendio.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold);
-            this.lblBienvendio.Location = new System.Drawing.Point(88, 26);
-            this.lblBienvendio.Name = "lblBienvendio";
-            this.lblBienvendio.Size = new System.Drawing.Size(197, 39);
-            this.lblBienvendio.TabIndex = 6;
-            this.lblBienvendio.Text = "Bienvenido";
-            // 
-            // lblOlvideC
-            // 
-            this.lblOlvideC.AutoSize = true;
-            this.lblOlvideC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblOlvideC.Location = new System.Drawing.Point(67, 337);
-            this.lblOlvideC.Name = "lblOlvideC";
-            this.lblOlvideC.Size = new System.Drawing.Size(155, 20);
-            this.lblOlvideC.TabIndex = 7;
-            this.lblOlvideC.TabStop = true;
-            this.lblOlvideC.Text = "Olvide la Contraseña";
-            // 
-            // plLine
-            // 
-            this.plLine.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("plLine.BackgroundImage")));
-            this.plLine.Location = new System.Drawing.Point(22, 92);
-            this.plLine.Name = "plLine";
-            this.plLine.Size = new System.Drawing.Size(254, 35);
-            this.plLine.TabIndex = 9;
             // 
             // tEntrar
             // 
